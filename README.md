@@ -9,6 +9,7 @@ Je suis développeur Web, au travail, j’aime bien écouter la radio, j’utili
 
 ##Build tools used
 - Gulp:  http://gulpjs.com
+- Minify Javascript ES6: https://github.com/babel/babili
 
 ##For icons of volume
 svg-sprite
