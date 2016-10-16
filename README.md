@@ -7,6 +7,9 @@ Je suis développeur Web, au travail, j’aime bien écouter la radio, j’utili
 
 #Technical Information
 
+##Build tools used
+http://gulpjs.com
+
 ##For icons of volume
 svg-sprite
 https://github.com/jkphl/svg-sprite
@@ -25,6 +28,5 @@ npm install stylelint stylelint-scss stylelint-config-bootstrap --save-dev
 
 
 ##Credits
-
 - Logo: http://www.iconarchive.com/show/qetto-2-icons-by-ampeross/radio-icon.html
 - Icons play, stop and volume: https://icomoon.io/#preview-free
