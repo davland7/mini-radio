@@ -25,4 +25,4 @@ npm install stylelint stylelint-scss stylelint-config-bootstrap --save-dev
 ##Crédits
 
 - Logo : http://www.iconarchive.com/show/qetto-2-icons-by-ampeross/radio-icon.html
-- Icônes d'aplication : https://icomoon.io/#preview-free
+- Icones de l'application : https://icomoon.io/#preview-free
