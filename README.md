@@ -18,11 +18,11 @@ svg-sprite --s --ss=volume.svg --symbol-dest=sprite images/*.svg
 npm install stylelint stylelint-scss stylelint-config-bootstrap --save-dev
 
 ##Link to third party libraries
-- https://github.com/vuejs/vue/blob/v1.0.28-csp/dist/vue.min.js
-- https://github.com/dailymotion/hls.js/blob/v0.6.6/dist/hls.min.js
+*https://github.com/vuejs/vue/blob/v1.0.28-csp/dist/vue.min.js
+*https://github.com/dailymotion/hls.js/blob/v0.6.6/dist/hls.min.js
 
 
 ##Credits
 
-- Logo : http://www.iconarchive.com/show/qetto-2-icons-by-ampeross/radio-icon.html
-- Icones de l'application : https://icomoon.io/#preview-free
+*Logo: http://www.iconarchive.com/show/qetto-2-icons-by-ampeross/radio-icon.html
+*Icons play, stop and volume: https://icomoon.io/#preview-free
