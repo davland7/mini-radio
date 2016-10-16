@@ -17,7 +17,7 @@ svg-sprite --s --ss=volume.svg --symbol-dest=sprite images/*.svg
 ##Stylelint
 npm install stylelint stylelint-scss stylelint-config-bootstrap --save-dev
 
-##Liens pour le reviewer de FireFox
+##Link to third party libraries
 - https://github.com/vuejs/vue/blob/v1.0.28-csp/dist/vue.min.js
 - https://github.com/dailymotion/hls.js/blob/v0.6.6/dist/hls.min.js
 
