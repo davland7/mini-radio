@@ -13,7 +13,7 @@ Je suis développeur Web, au travail, j’aime bien écouter la radio, j’utili
 - Gulp:  http://gulpjs.com
 - Minify Javascript ES6: https://github.com/babel/babili
 
-##For icons of volume
+##For icons of volume component
 svg-sprite
 https://github.com/jkphl/svg-sprite
 
