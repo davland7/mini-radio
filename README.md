@@ -5,7 +5,7 @@ https://chrome.google.com/webstore/detail/mini-radio/klcjochgjlcecbalpokmcldlfhn
 
 
 
-##For image of volume
+##For icons of volume
 svg-sprite
 https://github.com/jkphl/svg-sprite
 
