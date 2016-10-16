@@ -1,0 +1,69 @@
+<html id="app">
+<head>
+	  <meta charset="utf-8">
+	  <title>{{ messages.appName }}</title>
+	  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="player">
+    <div @click="toggleButton" class="player__button" title="{{ player.paused ? messages.play : messages.stop }}">
+      <img v-bind:src="'images/stations/' + player.station.logo" class="player__logo"/>
+      <svg v-if="player.paused" class="player__toggle" viewBox="0 0 16 16">
+				<path d="M3 2l10 6-10 6z"></path>
+			</svg>
+			<svg v-else class="player__toggle" viewBox="0 0 16 16">
+				<path d="M2 2h12v12h-12z"></path>
+			</svg>
+    </div>
+    <div class="player__title">
+      {{ player.station.title }}
+    </div>
+    <div class="player__description">
+      {{ player.station.description }}
+    </div>
+    <div class="player__volume">
+      <volume :value=volume :muted=muted @volume="volumeControl" @mute="muteButton"></volume>
+    </div>
+  </div>
+	<div class="navbar">
+		<div class="logo">
+			<img src="images/logo.png"/>
+			{{ messages.appName }}
+		</div>
+		<ul class="tabs">
+			<li v-for="tabNumber in totalTabs" class="tab">
+				<a @click="tab(tabNumber)" href="#" class="tab__button" v-bind:class="{'tab__button--current': currentTab === tabNumber}">{{ tabNumber + 1 }}</a>
+			</li>
+		</ul>
+	</div>
+	<div class="stations">
+	  <ul>
+	    <li v-for="station in stations | paginate" class="station">
+	    	<div @click="playButton(station)" class="station__button" title="{{ messages.play }}">
+	    		<img v-bind:src="'images/stations/' + station.logo" class="station__logo"/>
+	    		<svg class="station__play" viewBox="0 0 16 16">
+						<path d="M3 2l10 6-10 6z"></path>
+					</svg>
+	    	</div>
+	    	<div class="station__title">
+	    		{{ station.title }}
+	    	</div>
+	    	<div class="station__description">
+	    		{{ station.description }}
+	    	</div>
+	    </li>
+	  </ul>
+	</div>
+  <div class="footer">
+  	<div class="footer__version">
+  		{{ messages.version }}
+  	</div>
+  	<div class="footer__github">
+  		<a @click="githubTrack" class="footer__link" href="{{ messages.homePageUrl }}" target="_blank">{{ messages.github }}</a>
+  	</div>
+  </div>
+	<script src="vendor/vue.min.js"></script>
+	<script src="js/popup.js"></script>
+  <script src="js/volume.js"></script>
+</body>
+</html>

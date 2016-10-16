@@ -1,0 +1,48 @@
+$color-red: #96292c;
+$color-brown: #363638;
+$color-black: #000;
+$color-white: #fff;
+$color-gray: #808080;
+
+$font-weight-bold: 600;
+
+body,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 320px;
+  font-family: Arial;
+  background-color: $color-white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  margin: 4px 2px 2px;
+  font-size: 10px;
+  color: $color-white;
+  background-color: $color-red;
+}
+
+.footer__link {
+  color: $color-white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@import 'player';
+@import 'volume';
+@import 'navbar';
+@import 'stations';
