@@ -8,7 +8,7 @@ Je suis développeur Web, au travail, j’aime bien écouter la radio, j’utili
 #Technical Information
 
 ##Build tools used
-http://gulpjs.com
+- Gulp:  http://gulpjs.com
 
 ##For icons of volume
 svg-sprite
