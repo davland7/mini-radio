@@ -5,6 +5,8 @@ https://chrome.google.com/webstore/detail/mini-radio/klcjochgjlcecbalpokmcldlfhn
 
 Je suis développeur Web, au travail, j’aime bien écouter la radio, j’utilisais VLC, mais je trouvais ça pas pratique, alors fait des recherches et appris a comprendre les extensions du navigateur Chrome, sur un clique d’un icône une liste de stations s’affiche et un autre clique fait jouer la station, ça serai cool, alors, j’ai crée Mini Radio, comme je dois gérer les streamings, j’ai limité aux stations de Montréal et Québec.
 
+#Technical Information
+
 ##For icons of volume
 svg-sprite
 https://github.com/jkphl/svg-sprite
