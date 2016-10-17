@@ -1,4 +1,4 @@
-# Mini Radio
+# Mini Radio 1.0.0
 https://chrome.google.com/webstore/detail/mini-radio/klcjochgjlcecbalpokmcldlfhngcnfh
 
 ##Lecteur audio des principales stations de radio de Montréal et Québec.
