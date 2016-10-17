@@ -3,7 +3,7 @@ https://chrome.google.com/webstore/detail/mini-radio/klcjochgjlcecbalpokmcldlfhn
 
 ##Lecteur audio des principales stations de radio de Montréal et Québec.
 
-![Radio Mini](https://1.bp.blogspot.com/-iJNGSD0PvZM/WAQFGeGXytI/AAAAAAAACEg/hPK1LAj89bERGdqvQLxCA54v_x-qRxVFgCLcB/s1600/screen-anime6.gif)
+![Radio Mini](https://davland7.github.io/mini-radio/images/screen.gif)
 
 Je suis développeur Web, au travail, j’aime bien écouter la radio, j’utilisais VLC, mais je trouvais ça pas pratique, alors fait des recherches et appris a comprendre les extensions du navigateur Chrome, sur un clique d’un icône une liste de stations s’affiche et un autre clique fait jouer la station, ça serai cool, alors, j’ai crée Mini Radio, comme je dois gérer les streamings, j’ai limité aux stations de Montréal et Québec.
 
