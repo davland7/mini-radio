@@ -1,9 +1,11 @@
 {
   "appName": {
-    "message": "Mini Radio"
+    "message": "Mini Radio",
+    "description": "The title of the application, displayed in the web store."
   },
   "appDesc": {
-    "message": "Lecteur audio des principales stations de radio de Montréal et Québec."
+    "message": "Lecteur audio des principales stations de radio de Montréal et Québec.", 
+    "description":"The description of the application, displayed in the web store."
   },
   "appKeyboardShortcuts": {
     "message": "Jouer/arrêter"
