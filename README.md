@@ -1,5 +1,6 @@
 # Mini Radio
-https://chrome.google.com/webstore/detail/mini-radio/klcjochgjlcecbalpokmcldlfhngcnfh
+
+[![Disponible sur Chrome Web Store](https://davland7.github.io/mini-radio/images/chrome-web-store.png)](https://chrome.google.com/webstore/detail/mini-radio/klcjochgjlcecbalpokmcldlfhngcnfh)
 
 ##Lecteur audio des principales stations de radio de Montréal et Québec.
 
