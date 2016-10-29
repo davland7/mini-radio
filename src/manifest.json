@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
   "name": "__MSG_appName__",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "default_locale": "fr",
   "description": "__MSG_appDesc__",
   "author": "David Landry",
-  "homepage_url": "https://github.com/davland7/mini-radio",
+  "homepage_url": "https://github.com/davland7/mini-radio#mini-radio",
   "icons": {
     "48": "images/icon48.png",
     "96": "images/icon96.png",

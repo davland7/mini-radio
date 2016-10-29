@@ -4,7 +4,7 @@
     "description": "The title of the application, displayed in the web store."
   },
   "appDesc": {
-    "message": "Un moyen simple, facile d'écouter vos stations et animateurs préférés du Québec au bureau, à la maison ou partout dans le monde.", 
+    "message": "Lecteur audio des principales stations de radio de Montréal et Québec.",
     "description":"The description of the application, displayed in the web store."
   },
   "appKeyboardShortcuts": {
