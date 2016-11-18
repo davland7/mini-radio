@@ -10,6 +10,10 @@ Un moyen simple, facile d'écouter vos stations et animateurs préférés du Qu�
 
 [![Disponible sur Chrome Web Store](https://davland7.github.io/mini-radio/images/chrome-web-store.png)](https://chrome.google.com/webstore/detail/mini-radio/klcjochgjlcecbalpokmcldlfhngcnfh?utm_source=github)
 
+##Des stations à jours
+
+https://raw.githubusercontent.com/davland7/mini-radio/gh-pages/images/validate.png
+
 #Technical Information
 
 ##Build tools used
