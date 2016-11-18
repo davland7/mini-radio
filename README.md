@@ -12,7 +12,7 @@ Un moyen simple, facile d'écouter vos stations et animateurs préférés du Qu�
 
 ##Des stations à jours
 
-https://raw.githubusercontent.com/davland7/mini-radio/gh-pages/images/validate.png
+[!Des stations à jours](https://raw.githubusercontent.com/davland7/mini-radio/gh-pages/images/validate.png)
 
 #Technical Information
 
