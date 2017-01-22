@@ -6,7 +6,7 @@ const stations = [
   {'title': 'ICI Radio-Canada Première', 'description': 'Montréal', 'stream': 'http://2qmtl0.akacast.akamaistream.net/7/953/177387/v1/rc.akacast.akamaistream.net/2QMTL0', 'logo': 'cbft-fm.png'},
   {'title': '98,5FM', 'description': 'Montréal', 'stream': 'http://985-lh.akamaihd.net/i/studioaudio_1@393647/master.m3u8', 'logo': 'chmp-fm.png'},
   {'title': 'CKOI', 'description': 'Montréal', 'stream': 'http://ckoi-lh.akamaihd.net/i/studioaudio_1@393649/master.m3u8', 'logo': 'ckoi-fm.png'},
-  {'title': 'ROCK 100.9', 'description': 'Québec', 'stream': 'http://icecast-chxx.rncm.ca/chxx.mp3', 'logo': 'chxx-fm.png'},
+  {'title': 'Pop 100.9', 'description': 'Québec', 'stream': 'http://icecast-chxx.rncm.ca/chxx.mp3', 'logo': 'chxx-fm.png'},
   {'title': 'Radio Classique', 'description': 'Montréal', 'stream': 'http://18843.live.streamtheworld.com/CJPXFMAAC.aac', 'logo': 'cjpx-fm.png'},
   {'title': 'Énergie 98.9', 'description': 'Québec', 'stream': 'http://15123.live.streamtheworld.com/CHIKFMAAC.aac', 'logo': 'chik-fm.png'},
   {'title': '107,3 Rouge FM', 'description': 'Montréal', 'stream': 'http://18153.live.streamtheworld.com/CITEFMAAC.aac', 'logo': 'cite-fm.png'},
