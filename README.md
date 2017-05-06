@@ -6,7 +6,7 @@ Mini Radio est une petite extension gratuite disponible sur Google Chrome, bient
 
 Un moyen simple, facile d'écouter vos stations et animateurs préférés du Québec au bureau, à la maison ou partout dans le monde.
 
-##Disponible sur Chrome Web Store
+## Disponible sur Chrome Web Store
 
 [![Disponible sur Chrome Web Store](https://davland7.github.io/mini-radio/images/chrome-web-store.png)](https://chrome.google.com/webstore/detail/mini-radio/klcjochgjlcecbalpokmcldlfhngcnfh?utm_source=github)
 
