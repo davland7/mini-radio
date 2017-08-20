@@ -1,6 +1,6 @@
 # Mini Radio
 
-## Deprecated new code with [Vuejs 2](https://github.com/davland7/miniradio) 
+## Deprecated
 
 ![Radio Mini](https://davland7.github.io/mini-radio/images/screen.gif)
 
