@@ -1,5 +1,7 @@
 # Mini Radio
 
+## Deprecated new code with [Vuejs 2](https://github.com/davland7/miniradio) 
+
 ![Radio Mini](https://davland7.github.io/mini-radio/images/screen.gif)
 
 Mini Radio est une petite extension gratuite disponible sur Google Chrome, bientôt FireFox qui fait jouer les streamings des principales stations de radio de Montréal et Québec.
