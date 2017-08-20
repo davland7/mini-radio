@@ -1,6 +1,6 @@
 # Mini Radio
 
-## Deprecated
+## Deprecated new code https://github.com/davland7/miniradio
 
 ![Radio Mini](https://davland7.github.io/mini-radio/images/screen.gif)
 
