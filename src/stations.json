@@ -1,0 +1,76 @@
+[{
+  "title": "92.5 The Beat",
+  "description": "Montréal",
+  "src": "https://beat-lh.akamaihd.net/i/studioaudio_1@393656/master.m3u8",
+  "logo": "./images/stations/ckbe-fm.png"
+}, {
+  "title": "98,5FM",
+  "description": "Montréal",
+  "src": "https://985-lh.akamaihd.net/i/studioaudio_1@393647/master.m3u8",
+  "logo": "./images/stations/chmp-fm.png"
+}, {
+  "title": "ICI Radio-Canada Première",
+  "description": "Montréal",
+  "src": "http://2qmtl0.akacast.akamaistream.net/7/953/177387/v1/rc.akacast.akamaistream.net/2QMTL0",
+  "logo": "./images/stations/ircp-fm.png"
+}, {
+  "title": "FM93",
+  "description": "Québec",
+  "src": "https://fm93-lh.akamaihd.net/i/studioaudio_1@393666/master.m3u8",
+  "logo": "./images/stations/cjmf-fm.png"
+}, {
+  "title": "CHOI 98,1 Radio X",
+  "description": "Québec",
+  "src": "http://icecast-choi.rncm.ca/choi.aac",
+  "logo": "./images/stations/choi-fm.png"
+}, {
+  "title": "CKOI",
+  "description": "Montréal",
+  "src": "https://ckoi-lh.akamaihd.net/i/studioaudio_1@393649/master.m3u8",
+  "logo": "./images/stations/ckoi-fm.png"
+}, {
+  "title": "BLVD 102.1",
+  "description": "Québec",
+  "src": "http://streaming.cfel.leclerccommunication.ca:8000/cfel.mp3",
+  "logo": "./images/stations/cfel-fm.png"
+}, {
+  "title": "Énergie 94.3",
+  "description": "Montréal",
+  "src": "http://17533.live.streamtheworld.com/CKMFFMAAC.aac",
+  "logo": "./images/stations/ckmf-fm.png"
+}, {
+  "title": "107,3 Rouge FM",
+  "description": "Montréal",
+  "src": "http://19293.live.streamtheworld.com/CITEFMAAC.aac",
+  "logo": "./images/stations/cite-fm.png"
+}, {
+  "title": "Rythme FM",
+  "description": "Montréal",
+  "src": "https://rythmemtl-lh.akamaihd.net/i/studioaudio_1@393689/master.m3u8",
+  "logo": "./images/stations/cfgl-fm.png"
+}, {
+  "title": "Énergie 98.9",
+  "description": "Québec",
+  "src": "http://16083.live.streamtheworld.com/CHIKFMAAC.aac",
+  "logo": "./images/stations/chik-fm.png"
+}, {
+  "title": "ICI Radio-Canada Première",
+  "description": "Québec",
+  "src": "http://2qque0.akacast.akamaistream.net/7/896/177395/v1/rc.akacast.akamaistream.net/2QQUE0",
+  "logo": "./images/stations/ircp-fm.png"
+}, {
+  "title": "91.9 Sport",
+  "description": "Montréal",
+  "src": "http://icecast-cklx.rncm.ca/cklx.aac",
+  "logo": "./images/stations/cklx-fm.png"
+}, {
+  "title": "CHOM",
+  "description": "Montréal",
+  "src": "http://18823.live.streamtheworld.com/CHOMFMAAC.aac",
+  "logo": "./images/stations/chom-fm.png"
+}, {
+  "title": "M FM 102,9FM",
+  "description": "Québec",
+  "src": "https://mfm-lh.akamaihd.net/i/studioaudio_1@393667/master.m3u8",
+  "logo": "./images/stations/cfom-fm.png"
+}]

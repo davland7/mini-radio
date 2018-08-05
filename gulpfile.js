@@ -1,61 +1,52 @@
-'use strict';
-
 const gulp = require('gulp');
-const sass = require('gulp-sass');
-const babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
+const jsonminify = require('gulp-jsonminify');
 const imagemin = require('gulp-imagemin');
+const htmlmin = require('gulp-htmlmin');
 const zip = require('gulp-zip');
-const del = require('del');
+const pump = require('pump');
 
-// SASS
-gulp.task('sass', () => {
- return gulp.src('./src/sass/**/*.scss')
-   .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-   .pipe(gulp.dest('./src'));
+// Remove space
+gulp.task('html', function () {
+  return gulp.src('./extension/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('watch', () => {
-  gulp.watch('./src/sass/**/*.scss', ['sass']);
+// Compress JS
+gulp.task('compress', function (cb) {
+  pump([
+      gulp.src('./extension/js/background.js'),
+      uglify(),
+      gulp.dest('./dist/js')
+    ],
+    cb
+  );
 });
 
-// Remove dist folder and zip
-gulp.task('del', () => {
-  del(['./dist', './mini-radio.zip']);
+// Minify JSON
+gulp.task('minify', function () {
+  return gulp.src(['./extension/**/*.json'])
+    .pipe(jsonminify())
+    .pipe(gulp.dest('./dist'));
 });
 
 // Copy files
-gulp.task('copy', () => {
-  gulp.src([
-    './src/*_locales/**/*',
-    './src/*vendor/**/*',
-    './src/manifest.json',
-    './src/popup.css',
-    './src/popup.html'
-  ]).pipe(gulp.dest('./dist'));
-});
-
-// Minify JS
-gulp.task('compress', () => {
-  gulp.src('./src/js/**/*.js')
-  .pipe(babel())
-  .pipe(gulp.dest('./dist/js'));
+gulp.task('copy', function () {
+  return gulp.src([
+    './extension/lib/*'
+  ]).pipe(gulp.dest('./dist/lib'));
 });
 
 // Minify PNG images
-gulp.task('images', () => {
-  gulp.src('./src/images/**/*')
+gulp.task('images', function () {
+  return gulp.src('./extension/images/**/*')
     .pipe(imagemin(imagemin.optipng()))
     .pipe(gulp.dest('./dist/images'));
 });
 
-// Create dist folder
-gulp.task('dist', ['compress', 'copy', 'images']);
-
-// Zip application
-gulp.task('zip', () => {
+gulp.task('default', ['html', 'compress', 'minify', 'copy', 'images'], function () {
   return gulp.src('./dist/**/*')
-    .pipe(zip('mini-radio.zip'))
+    .pipe(zip('miniradio.zip'))
     .pipe(gulp.dest('./'));
 });
-
-gulp.task('default', ['sass']);

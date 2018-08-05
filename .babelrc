@@ -1,3 +1,5 @@
 {
-  presets: ['babili']
+  "presets": [
+    ["env", { "modules": false }]
+  ]
 }

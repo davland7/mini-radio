@@ -1,0 +1,23 @@
+{
+  "name": {
+    "message": "Mini Radio"
+  },
+  "description": {
+    "message": "Lecteur audio des principales stations de radio de Montréal et Québec."
+  },
+  "appKeyboardShortcuts": {
+    "message": "Jouer/arrêter"
+  },
+  "github": {
+    "message": "GitHub"
+  },
+  "play": {
+    "message": "Jouer"
+  },
+  "stop": {
+    "message": "Arrêter"
+  },
+  "lang": {
+    "message": "fr"
+  }
+}
