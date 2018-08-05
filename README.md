@@ -1,6 +1,6 @@
 # Mini Radio
 
-![Radio Mini](https://user-images.githubusercontent.com/187134/29489199-4d6242fc-84e9-11e7-8de2-9fd656a541da.gif)
+![Radio Mini](http://www.davidlandry.ca/miniradio/images/screen.gif)
 
 Mini Radio est une petite extension gratuite disponible sur Google Chrome, bientôt FireFox qui fait jouer les streamings des principales stations de radio de Montréal et Québec.
 
@@ -8,7 +8,7 @@ Un moyen simple, facile d'écouter vos stations et animateurs préférés du Qu�
 
 ## Disponible sur Chrome Web Store
 
-[![Disponible sur Chrome Web Store](https://user-images.githubusercontent.com/187134/29489211-91743dec-84e9-11e7-9892-e37b7645ad74.png)](https://chrome.google.com/webstore/detail/mini-radio/klcjochgjlcecbalpokmcldlfhngcnfh?utm_source=github)
+[![Disponible sur Chrome Web Store](http://www.davidlandry.ca/miniradio/images/chrome-web-store.png)](https://chrome.google.com/webstore/detail/mini-radio/klcjochgjlcecbalpokmcldlfhngcnfh?utm_source=github)
 
 # Technical Information
 
