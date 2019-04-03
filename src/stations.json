@@ -1,12 +1,12 @@
 [{
   "title": "92.5 The Beat",
   "description": "Montréal",
-  "src": "https://beat-lh.akamaihd.net/i/studioaudio_1@393656/master.m3u8",
+  "src": "https://cogecomedia.leanstream.co/cogecomedia/CKBEFM.stream/playlist.m3u8",
   "logo": "./images/stations/ckbe-fm.png"
 }, {
   "title": "98,5FM",
   "description": "Montréal",
-  "src": "https://985-lh.akamaihd.net/i/studioaudio_1@393647/master.m3u8",
+  "src": "https://cogecomedia.leanstream.co/cogecomedia/CHMPFM.stream/playlist.m3u8",
   "logo": "./images/stations/chmp-fm.png"
 }, {
   "title": "ICI Radio-Canada Première",
@@ -16,7 +16,7 @@
 }, {
   "title": "FM93",
   "description": "Québec",
-  "src": "https://fm93-lh.akamaihd.net/i/studioaudio_1@393666/master.m3u8",
+  "src": "https://cogecomedia.leanstream.co/cogecomedia/CJMFFM.stream/playlist.m3u8",
   "logo": "./images/stations/cjmf-fm.png"
 }, {
   "title": "CHOI 98,1 Radio X",
@@ -26,7 +26,7 @@
 }, {
   "title": "CKOI",
   "description": "Montréal",
-  "src": "https://ckoi-lh.akamaihd.net/i/studioaudio_1@393649/master.m3u8",
+  "src": "https://cogecomedia.leanstream.co/cogecomedia/CKOIFM.stream/playlist.m3u8",
   "logo": "./images/stations/ckoi-fm.png"
 }, {
   "title": "BLVD 102.1",
@@ -46,7 +46,7 @@
 }, {
   "title": "Rythme FM",
   "description": "Montréal",
-  "src": "https://rythmemtl-lh.akamaihd.net/i/studioaudio_1@393689/master.m3u8",
+  "src": "https://cogecomedia.leanstream.co/cogecomedia/CFGLFM.stream/playlist.m3u8",
   "logo": "./images/stations/cfgl-fm.png"
 }, {
   "title": "Énergie 98.9",
@@ -66,7 +66,7 @@
 }, {
   "title": "CHOM",
   "description": "Montréal",
-  "src": "https://18823.live.streamtheworld.com/CHOMFMAAC.aac",
+  "src": "http://18183.live.streamtheworld.com/CHOMFMAAC.aac",
   "logo": "./images/stations/chom-fm.png"
 }, {
   "title": "QUB Radio",
