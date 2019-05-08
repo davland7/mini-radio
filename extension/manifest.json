@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "__MSG_name__",
-  "version": "2.1.5",
+  "version": "2.2.5",
   "default_locale": "fr",
   "description": "__MSG_description__",
   "author": "David Landry",
@@ -14,7 +14,7 @@
     "128": "images/icon128.png"
   },
   "background": {
-    "scripts": ["lib/hls.light.min.js", "js/background.js"],
+    "scripts": ["lib/rplayer.js", "js/background.js"],
     "persistent": true
   },
   "browser_action": {

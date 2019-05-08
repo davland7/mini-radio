@@ -1,44 +1,22 @@
-var audio = new Audio();
+var audio = new rPlayer();
 var hls = null;
 
 function play(station) {
-  var src = station.src;
-
-  stop();
-
-  if (Hls.isSupported() && src.search('.m3u8') > 0) {
-    hls = new Hls();
-    hls.loadSource(src);
-    hls.attachMedia(audio);
-    hls.on(Hls.Events.MANIFEST_PARSED, function() {
-      audio.play();
-    });
-  } else {
-    audio.src = src;
-    audio.load();
-    audio.play();
-  }
+  audio.play(station.src);
 
   chrome.storage.local.set({'station': station});
 }
 
 function stop() {
-  audio.pause();
-  audio.currentTime = 0;
-  audio.src = '';
-
-  if (hls) {
-    hls.destroy();
-    hls = null;
-  }
+  audio.stop();
 }
 
 function setVolume(value) {
-  chrome.storage.local.set({'volume': audio.volume = value});
+  audio.volume = value;
 }
 
 function stopped() {
-  return audio.paused;
+  return !audio.playing;
 }
 
 
@@ -47,7 +25,7 @@ function volume() {
 }
 
 function mute() {
-  return audio.muted = !audio.muted;
+  return audio.mute();
 }
 
 function muted() {
@@ -68,14 +46,4 @@ chrome.commands.onCommand.addListener(function(command) {
   // Close Popup if open
   var views = chrome.extension.getViews({type: 'popup'})[0];
   if (views) views.close();
-});
-
-chrome.storage.local.get(['volume'], function(items) {
-  var volume = items.volume;
-
-  if (/^(0(\.[0-9]{1})?|1(\.0)?)$/.test(volume)) {
-    audio.volume = volume;
-  } else {
-    setVolume(0.7);
-  }
 });

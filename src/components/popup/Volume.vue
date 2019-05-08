@@ -6,7 +6,7 @@
       </svg>
     </div>
     <div class="volume__control">
-      <input v-on:input="setVolume($event.target.value)" :value="value" type="range" max="1" min="0" step="0.1" class="volume__range" />
+      <input v-on:input="setVolume($event.target.value)" :value="value" type="range" max="10" min="0" step="1" class="volume__range" />
     </div>
     <div class="volume__pourcent">
       {{ pourcent }}
@@ -36,14 +36,14 @@
     },
     computed: {
       pourcent () {
-        return (this.value * 100) + '%'
+        return (this.value * 10) + '%'
       },
       icon () {
-        if (!this.muted && this.value > 0.6) {
+        if (!this.muted && this.value > 6) {
           return 'images/volume.svg#295-volume-high'
-        } else if (!this.muted && this.value > 0.2 && this.value < 0.7) {
+        } else if (!this.muted && this.value > 2 && this.value < 7) {
           return 'images/volume.svg#296-volume-medium'
-        } else if (!this.muted && this.value > 0 && this.value < 0.3) {
+        } else if (!this.muted && this.value > 0 && this.value < 3) {
           return 'images/volume.svg#297-volume-low'
         } else if (this.muted) {
           return 'images/volume.svg#299-volume-mute2'
