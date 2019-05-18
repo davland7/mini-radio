@@ -50,7 +50,7 @@
     methods: {
       play (station) {
         BG.play(station)
-        GA.trackEvent(station.title + ' - ' + station.description, 'played')
+        GA.trackEvent('played', station.title + ' - ' + station.description)
 
         this.stopped = false
       },

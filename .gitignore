@@ -3,3 +3,4 @@ extension/js/popup.js
 dist/
 miniradio.zip
 *.log
+package-lock.json

@@ -11,6 +11,9 @@
   "github": {
     "message": "GitHub"
   },
+  "googleAnalyticsTrackingId": {
+    "message": "UA-102067835-1"
+  },
   "play": {
     "message": "Jouer"
   },

@@ -36,7 +36,7 @@
 }, {
   "title": "Énergie 94.3",
   "description": "Montréal",
-  "src": "https://17533.live.streamtheworld.com/CKMFFMAAC.aac",
+  "src": "http://19193.live.streamtheworld.com/CKMFFMAAC.aac",
   "logo": "./images/stations/ckmf-fm.png"
 }, {
   "title": "107,3 Rouge FM",
@@ -51,7 +51,7 @@
 }, {
   "title": "Énergie 98.9",
   "description": "Québec",
-  "src": "https://16083.live.streamtheworld.com/CHIKFMAAC.aac",
+  "src": "http://18123.live.streamtheworld.com/CHIKFMAAC.aac",
   "logo": "./images/stations/chik-fm.png"
 }, {
   "title": "ICI Radio-Canada Première",
@@ -66,11 +66,11 @@
 }, {
   "title": "CHOM",
   "description": "Montréal",
-  "src": "http://18183.live.streamtheworld.com/CHOMFMAAC.aac",
+  "src": "http://16863.live.streamtheworld.com/CHOMFMAAC.aac",
   "logo": "./images/stations/chom-fm.png"
 }, {
   "title": "QUB Radio",
   "description": "Montréal",
-  "src": "https://17523.live.streamtheworld.com/QUB_RADIOAAC.aac",
+  "src": "https://19293.live.streamtheworld.com/QUB_RADIOAAC.aac",
   "logo": "./images/stations/qub-web.png"
 }]

@@ -16,7 +16,7 @@
     name: 'Footer',
     methods: {
       githubTrack () {
-        GA.trackEvent(this.messages.github, 'clicked')
+        GA.trackEvent('clicked', this.messages.github)
       }
     },
     data () {
