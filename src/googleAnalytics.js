@@ -4,15 +4,15 @@ const trackEvent = (ea, el) => {
   const GA_TRACKING_ID = chrome.i18n.getMessage('googleAnalyticsTrackingId')
   const GA_EVENT_CATEGORY = chrome.i18n.getMessage('name')
   const GA_USER_LANGUAGE = chrome.i18n.getUILanguage()
-  const GA_LOCAL_STORAGE_KEY = 'ga:clientId';
+  const GA_LOCAL_STORAGE_KEY = 'ga:clientId'
 
-  let cid = null;
+  let cid = null
 
   Storage.get(GA_LOCAL_STORAGE_KEY, (err, clientId) => {
     if (!err && clientId) {
 	  cid = clientId
     } else {
-      cid = Math.floor(Math.random() * 0x7FFFFFFF) + '.' + Math.floor(Date.now() / 1000);
+      cid = Math.floor(Math.random() * 0x7FFFFFFF) + '.' + Math.floor(Date.now() / 1000)
 
       Storage.set(GA_LOCAL_STORAGE_KEY, cid)
     }
