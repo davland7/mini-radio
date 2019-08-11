@@ -11,7 +11,7 @@
 }, {
   "title": "ICI Radio-Canada Première",
   "description": "Montréal",
-  "src": "http://2qmtl0.akacast.akamaistream.net/7/953/177387/v1/rc.akacast.akamaistream.net/2QMTL0",
+  "src": "https://srcprem-lh.akamaihd.net/i/SRCPREMIERE_MTL@508562/master.m3u8",
   "logo": "./images/stations/ircp-fm.png"
 }, {
   "title": "FM93",
@@ -56,7 +56,7 @@
 }, {
   "title": "ICI Radio-Canada Première",
   "description": "Québec",
-  "src": "https://2qque0.akacast.akamaistream.net/7/896/177395/v1/rc.akacast.akamaistream.net/2QQUE0",
+  "src": "https://srcprem-lh.akamaihd.net/i/SRCPREMIERE_QUE@508647/master.m3u8",
   "logo": "./images/stations/ircp-fm.png"
 }, {
   "title": "91.9 Sport",
