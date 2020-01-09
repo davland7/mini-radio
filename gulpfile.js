@@ -45,8 +45,8 @@ gulp.task('images', function () {
     .pipe(gulp.dest('./dist/images'));
 });
 
-gulp.task('default', ['html', 'compress', 'minify', 'copy', 'images'], function () {
+gulp.task('default', gulp.series(['html', 'compress', 'minify', 'copy', 'images'], function() {
   return gulp.src('./dist/**/*')
     .pipe(zip('miniradio.zip'))
     .pipe(gulp.dest('./'));
-});
+}));
