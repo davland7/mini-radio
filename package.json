@@ -30,7 +30,7 @@
     "gulp-minify": "^1.0.0",
     "gulp-uglify": "^3.0.0",
     "gulp-zip": "^4.0.0",
-    "node-fetch": "^1.7.2",
+    "node-fetch": "^2.6.1",
     "node-sass": "^4.5.3",
     "pump": "^1.0.2",
     "sass-loader": "^6.0.6",
