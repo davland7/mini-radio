@@ -41,7 +41,7 @@ gulp.task('copy', function () {
 // Minify PNG images
 gulp.task('images', function () {
   return gulp.src('./extension/images/**/*')
-    .pipe(imagemin(imagemin.optipng()))
+    .pipe(imagemin([imagemin.optipng()]))
     .pipe(gulp.dest('./dist/images'));
 });
 
