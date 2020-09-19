@@ -42,41 +42,45 @@
     height: 60px;
     padding: 2px;
     margin: 2px;
-    border: solid 1px #dcdcdd;
-  }
+    border: solid 1px var(--border-color);
+    background-color: var(--content-color);
 
-  .station__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 242px;
-    padding: 0 10px;
-    font-size: 14px;
-  }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 242px;
+      padding: 0 10px;
+      font-size: 14px;
+      color: var(--light-color);
 
-  .station__button {
-    position: relative;
-    width: 60px;
-    background: #fff;
-  }
+      strong {
+        color: var(--dark-color);
+      }
+    }
 
-  .station__logo {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-  }
+    &__button {
+      position: relative;
+      width: 60px;
+    }
 
-  .station__play {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    padding: 9px;
-    border: solid 1px #000;
-    opacity: 0;
+    &__logo {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+    }
 
-    &:hover {
-      cursor: pointer;
-      opacity: .8;
+    &__play {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      padding: 9px;
+      opacity: 0;
+
+      &:hover {
+        cursor: pointer;
+        opacity: .8;
+      }
     }
   }
 </style>

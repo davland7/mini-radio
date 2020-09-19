@@ -41,40 +41,40 @@
     justify-content: space-between;
     align-items: center;
     margin: 4px 0;
-  }
 
-  .navbar__logo {
-    display: flex;
-    align-items: center;
-    height: 32px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #3f3f3f;
+    &__logo {
+      display: flex;
+      align-items: center;
+      height: 32px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--dark-color);
 
-    img {
-      padding: 0 6px;
+      img {
+        padding: 0 6px;
+      }
     }
-  }
 
-  .navbar__tabs {
-    display: flex;
-  }
+    &__tabs {
+      display: flex;
+    }
 
-  .navbar__tab {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 2px;
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-    color: #363638;
-    border: solid 1px #dcdcdd;
-    cursor: pointer;
+    &__tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 2px;
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+      color: var(--light-color);
+      border: solid 1px var(--border-color);
+      cursor: pointer;
 
-    &--current,
-    &:hover {
-      background-color: #e9e9ea;
+      &--current,
+      &:hover {
+        background-color: var(--content-color);;
+      }
     }
   }
 </style>

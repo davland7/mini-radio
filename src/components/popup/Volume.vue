@@ -59,69 +59,54 @@
   .volume {
     display: flex;
     align-items: center;
-  }
 
-  .volume__stade {
-    display: flex;
-    align-items: center;
-    width: 30px;
+    &__stade {
+      display: flex;
+      align-items: center;
+      width: 30px;
 
-    svg {
-      width: 20px;
-      height: 20px;
-    }
-  }
-
-  .volume__control {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .volume__range {
-    width: 120px;
-    height: 4px;
-    background-color: #d2d2d2;
-    -webkit-appearance: none;
-
-    &:focus {
-      outline: none;
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: var(--dark-color);
+      }
     }
 
-    &::-webkit-slider-thumb {
-      width: 6px;
-      height: 18px;
-      background-color: #000;
-      cursor: pointer;
+    &__control {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    &__range {
+      width: 120px;
+      height: 4px;
+      background-color: var(--background-color);
       -webkit-appearance: none;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::-webkit-slider-thumb {
+        width: 6px;
+        height: 18px;
+        background-color: var(--dark-color);
+        cursor: pointer;
+        -webkit-appearance: none;
+      }
     }
 
-    &::-moz-range-thumb {
-      width: 6px;
-      height: 18px;
-      background-color: #000;
-      border: 0;
-      border-radius: 0;
-      cursor: pointer;
+    &__pourcent {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-left: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--dark-color);
     }
-
-    &::-moz-range-track {
-      background-color: #d2d2d2;
-    }
-
-    &::-moz-focus-outer {
-      border: 0;
-    }
-  }
-
-  .volume__pourcent {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-left: 10px;
-    font-size: 14px;
-    font-weight: 600;
   }
 </style>

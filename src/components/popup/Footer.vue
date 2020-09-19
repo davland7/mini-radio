@@ -38,17 +38,16 @@
     align-items: center;
     padding: 4px;
     margin: 4px 2px 2px;
-    background-color: #b34044;
     font-size: 10px;
-    color: #fff;
-  }
+    color: var(--dark-color);
 
-  .footer__link {
-    color: #fff;
-    text-decoration: none;
+    &__link {
+      color: inherit;
+      text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 </style>

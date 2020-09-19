@@ -61,11 +61,29 @@
 </script>
 
 <style lang="scss">
+  :root {
+    --dark-color: #202124;
+    --light-color: #5f6368;
+    --border-color: #dadce0;
+    --background-color: #f7f8f9;
+    --content-color: #fff;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --dark-color: #e8eaed;
+      --light-color: #9aa0a6;
+      --border-color: #5f6368;
+      --background-color: #1d1e20;
+      --content-color: #292a2d;
+    }
+  }
+
   body{
     width: 320px;
     padding: 0;
     margin: 0;
-    background-color: $primary;
+    background-color: var(--background-color);
     font-family: Arial;
   }
 </style>

@@ -1,6 +1,6 @@
 {
   "name": "miniradio",
-  "version": "1.0.1",
+  "version": "2.4.7",
   "description": "Mini Radio is Chrome Extensions for listen radio stations from Montreal and Quebec City.",
   "repository": "https://github.com/davland7/miniradio.git",
   "author": "David Landry <davland7@gmail.com>",
@@ -32,7 +32,6 @@
     "node-sass": "^4.14.1",
     "pump": "^3.0.0",
     "sass-loader": "^10.0.2",
-    "sass-resources-loader": "^2.1.0",
     "vue-loader": "^15.9.3",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^4.44.2",
