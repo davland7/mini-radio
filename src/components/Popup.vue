@@ -65,7 +65,7 @@
     width: 320px;
     padding: 0;
     margin: 0;
-    background-color: #fff;
+    background-color: $primary;
     font-family: Arial;
   }
 </style>
