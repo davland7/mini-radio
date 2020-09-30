@@ -44,14 +44,16 @@
     margin: 2px;
     border: solid 1px var(--border-color);
     background-color: var(--content-color);
+    border-radius: 60px 0 0 60px;
 
     &__text {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: center;
       width: 242px;
       padding: 0 10px;
       font-size: 14px;
+      line-height: 1.5;
       color: var(--light-color);
 
       strong {
@@ -62,23 +64,25 @@
     &__button {
       position: relative;
       width: 60px;
+      cursor: pointer;
     }
 
     &__logo {
       position: absolute;
-      width: 60px;
-      height: 60px;
+      width: 58px;
+      height: 58px;
+      border-radius: 58px;
+      border: solid 1px var(--border-color);
     }
 
     &__play {
       position: absolute;
       width: 40px;
       height: 40px;
-      padding: 9px;
+      padding: 9px 6px 9px 12px;
       opacity: 0;
 
       &:hover {
-        cursor: pointer;
         opacity: .8;
       }
     }

@@ -69,6 +69,7 @@
       font-size: 18px;
       color: var(--light-color);
       border: solid 1px var(--border-color);
+      border-radius: 30px;
       cursor: pointer;
 
       &--current,

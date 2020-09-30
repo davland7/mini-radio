@@ -49,10 +49,10 @@
   "src": "https://cogecomedia.leanstream.co/cogecomedia/CFGLFM.stream/playlist.m3u8",
   "logo": "./images/stations/cfgl-fm.png"
 }, {
-  "title": "Énergie 98.9",
+  "title": "WKND",
   "description": "Québec",
-  "src": "http://18123.live.streamtheworld.com/CHIKFMAAC.aac",
-  "logo": "./images/stations/chik-fm.png"
+  "src": "http://streaming.cjec.leclerccommunication.ca:8000/cjec.mp3",
+  "logo": "./images/stations/cjec-fm.png"
 }, {
   "title": "ICI Radio-Canada Première",
   "description": "Québec",

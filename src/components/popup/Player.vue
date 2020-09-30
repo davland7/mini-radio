@@ -89,20 +89,20 @@
     margin: 2px;
     background: var(--content-color);
     border: solid 1px var(--border-color);
+    border-radius: 72px 0 0 72px;
 
     &__button {
       position: relative;
       width: 72px;
-
-      svg {
-        fill: black;
-      }
+      cursor: pointer;
     }
 
     &__logo {
       position: absolute;
-      width: 72px;
-      height: 72px;
+      width: 70px;
+      height: 70px;
+      border-radius: 70px;
+      border: solid 1px var(--border-color);
     }
 
     &__toggle {
@@ -112,8 +112,11 @@
       padding: 14px;
       opacity: 0;
 
+      &.play {
+        padding: 14px 11px 14px 17px;
+      }
+
       &:hover {
-        cursor: pointer;
         opacity: .8;
       }
     }
