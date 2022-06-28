@@ -6,36 +6,26 @@
   "author": "David Landry <davland7@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --config webpack.dev.js",
-    "dist": "npm run del && webpack --config webpack.prod.js && gulp",
-    "del": "del-cli dist miniradio.zip",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
     "test": "node tests/stations.js"
   },
   "dependencies": {
-    "vue": "^2.6.12"
+    "@davland7/rplayer": "^2.0.5",
+    "core-js": "^3.23.3",
+    "vue": "^3.2.37"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "babel-loader": "^8.1.0",
-    "chalk": "^4.1.0",
-    "css-loader": "^4.3.0",
-    "del-cli": "^3.0.1",
-    "gulp": "^4.0.2",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-jsonminify": "^1.1.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-zip": "^5.0.2",
-    "mini-css-extract-plugin": "^0.11.2",
-    "node-fetch": "^2.6.1",
-    "node-sass": "^4.14.1",
-    "pump": "^3.0.0",
-    "sass-loader": "^10.0.2",
-    "vue-loader": "^15.9.3",
-    "vue-template-compiler": "^2.6.12",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12",
-    "webpack-merge": "^5.1.4"
+    "@vue/cli-plugin-babel": "^5.0.6",
+    "@vue/cli-plugin-eslint": "^5.0.6",
+    "@vue/cli-service": "^5.0.6",
+    "@vue/compat": "^3.2.37",
+    "@vue/compiler-sfc": "^3.2.37",
+    "chalk": "^5.0.1",
+    "eslint": "^8.18.0",
+    "eslint-plugin-vue": "^9.1.1",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2"
   }
 }

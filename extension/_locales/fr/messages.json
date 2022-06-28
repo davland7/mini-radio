@@ -5,22 +5,13 @@
   "description": {
     "message": "Lecteur audio des principales stations de radio de Montréal et Québec."
   },
-  "appKeyboardShortcuts": {
-    "message": "Jouer/arrêter"
-  },
   "github": {
     "message": "GitHub"
-  },
-  "googleAnalyticsTrackingId": {
-    "message": "UA-102067835-1"
   },
   "play": {
     "message": "Jouer"
   },
   "stop": {
     "message": "Arrêter"
-  },
-  "lang": {
-    "message": "fr"
   }
 }

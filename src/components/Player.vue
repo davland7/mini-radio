@@ -1,7 +1,7 @@
 <template>
   <div class="player">
     <div @click="toggle" :title="action" class="player__button">
-      <img :src="station.logo" class="player__logo" />
+      <img :src="require(`@/images/${station.logo}`)" class="player__logo" />
       <svg v-if="stopped" viewBox="0 0 16 16" class="player__toggle play">
         <path d="M3 2l10 6-10 6z"></path>
       </svg>
@@ -22,11 +22,8 @@
 </template>
 
 <script>
+  import rPlayer from '@davland7/rplayer'
   import Volume from './Volume.vue'
-
-  import GA from '../../googleAnalytics.js'
-
-  const BG = chrome.extension.getBackgroundPage()
 
   export default {
     name: 'Player',
@@ -38,9 +35,10 @@
     ],
     data () {
       return {
-        stopped: BG.stopped(),
-        muted: BG.muted(),
-        volume: BG.volume(),
+        audio: null,
+        stopped: true,
+        muted: false,
+        volume: 0.2,
         messages: {
           play: chrome.i18n.getMessage('play'),
           stop: chrome.i18n.getMessage('stop')
@@ -49,24 +47,23 @@
     },
     methods: {
       play (station) {
-        BG.play(station)
-        GA.trackEvent('played', station.title + ' - ' + station.description)
-
+        document.title = station.title
+        this.audio.playSrc(station.src)
         this.stopped = false
       },
       toggle () {
         if (this.stopped) {
           this.play(this.station)
         } else {
-          BG.stop()
+          this.audio.stop()
           this.stopped = true
         }
       },
       setVolume (value) {
-        BG.setVolume(value)
+        this.audio.volume = value
       },
       mute () {
-        BG.mute()
+        this.audio.mute()
       }
     },
     computed: {
@@ -75,6 +72,9 @@
       }
     },
     created () {
+      this.audio = new rPlayer()
+      this.volume = this.audio.volume
+
       this.$parent.$on('play', this.play)
     }
   }

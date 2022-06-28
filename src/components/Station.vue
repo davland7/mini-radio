@@ -1,7 +1,7 @@
 <template>
   <div class="station">
     <div @click="play" :title="messages.play" class="station__button">
-      <img :src="station.logo" class="station__logo" />
+      <img :src="require(`@/images/${station.logo}`)" class="station__logo" />
       <svg viewBox="0 0 16 16" class="station__play">
         <path d="M3 2l10 6-10 6z"></path>
       </svg>

@@ -1,39 +1,26 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "__MSG_name__",
-  "version": "2.5.7",
+  "version": "2.6.8",
   "default_locale": "fr",
   "description": "__MSG_description__",
   "author": "David Landry",
   "homepage_url": "https://github.com/davland7/miniradio",
-  "icons": {
-    "16": "images/icon16.png",
-    "24": "images/icon24.png",
-    "48": "images/icon48.png",
-    "96": "images/icon96.png",
-    "128": "images/icon128.png"
-  },
   "background": {
-    "scripts": ["lib/rplayer.js", "js/background.js"],
-    "persistent": true
-  },
-  "browser_action": {
-    "default_icon": {
-      "19": "images/icon19.png",
-      "38": "images/icon38.png"
-    },
-    "default_title": "__MSG_name__",
-    "default_popup": "popup.html"
-  },
-  "commands": {
-    "play-stop": {
-      "suggested_key": {
-        "default": "Alt+Shift+P"
-      },
-      "description": "__MSG_appKeyboardShortcuts__"
-    }
+    "service_worker": "background.js"
   },
   "permissions": [
     "storage"
-  ]
+  ],
+  "action": {},
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "options_ui": {
+    "page": "popup/index.html",
+    "open_in_tab": true
+  }
 }

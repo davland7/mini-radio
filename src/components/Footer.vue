@@ -10,13 +10,11 @@
 </template>
 
 <script>
-  import GA from '../../googleAnalytics.js'
-
   export default {
     name: 'Footer',
     methods: {
       githubTrack () {
-        GA.trackEvent('clicked', this.messages.github)
+
       }
     },
     data () {

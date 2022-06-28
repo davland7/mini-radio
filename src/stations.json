@@ -1,76 +1,76 @@
 [{
   "title": "92.5 The Beat",
   "description": "Montréal",
-  "src": "https://cogecomedia.leanstream.co/cogecomedia/CKBEFM.stream/playlist.m3u8",
-  "logo": "./images/stations/ckbe-fm.png"
+  "src": "https://playerservices.streamtheworld.com/api/livestream-redirect/CKBEFMAAC.m3u8",
+  "logo": "ckbe-fm.png"
 }, {
   "title": "98,5FM",
   "description": "Montréal",
-  "src": "https://cogecomedia.leanstream.co/cogecomedia/CHMPFM.stream/playlist.m3u8",
-  "logo": "./images/stations/chmp-fm.png"
+  "src": "https://playerservices.streamtheworld.com/api/livestream-redirect/CHMPFMAAC.m3u8",
+  "logo": "chmp-fm.png"
 }, {
   "title": "ICI Radio-Canada Première",
   "description": "Montréal",
   "src": "https://rcavliveaudio.akamaized.net/hls/live/2006635/P-2QMTL0_MTL/playlist.m3u8",
-  "logo": "./images/stations/ircp-fm.png"
+  "logo": "ircp-fm.png"
 }, {
   "title": "FM93",
   "description": "Québec",
-  "src": "https://cogecomedia.leanstream.co/cogecomedia/CJMFFM.stream/playlist.m3u8",
-  "logo": "./images/stations/cjmf-fm.png"
+  "src": "https://playerservices.streamtheworld.com/api/livestream-redirect/CJMFFMAAC.m3u8",
+  "logo": "cjmf-fm.png"
 }, {
   "title": "CHOI 98,1 Radio X",
   "description": "Québec",
-  "src": "http://icecast-choi.rncm.ca/choi.aac",
-  "logo": "./images/stations/choi-fm.png"
+  "src": "https://lb0-stream.radiox981.ca/choi.aac",
+  "logo": "choi-fm.png"
 }, {
   "title": "CKOI",
   "description": "Montréal",
-  "src": "https://cogecomedia.leanstream.co/cogecomedia/CKOIFM.stream/playlist.m3u8",
-  "logo": "./images/stations/ckoi-fm.png"
+  "src": "https://playerservices.streamtheworld.com/api/livestream-redirect/CKOIFMAAC.m3u8",
+  "logo": "ckoi-fm.png"
 }, {
   "title": "BLVD 102.1",
   "description": "Québec",
-  "src": "http://streaming.cfel.leclerccommunication.ca:8000/cfel.mp3",
-  "logo": "./images/stations/cfel-fm.png"
+  "src": "https://streaming2.cfel.leclerccommunication.ca/proxy/cfel/cfel.mp3",
+  "logo": "cfel-fm.png"
 }, {
   "title": "Énergie 94.3",
   "description": "Montréal",
-  "src": "http://19193.live.streamtheworld.com/CKMFFMAAC.aac",
-  "logo": "./images/stations/ckmf-fm.png"
+  "src": "https://24483.live.streamtheworld.com/CKMFFMAAC.aac",
+  "logo": "ckmf-fm.png"
 }, {
   "title": "107,3 Rouge FM",
   "description": "Montréal",
   "src": "https://19293.live.streamtheworld.com/CITEFMAAC.aac",
-  "logo": "./images/stations/cite-fm.png"
+  "logo": "cite-fm.png"
 }, {
   "title": "Rythme FM",
   "description": "Montréal",
-  "src": "https://cogecomedia.leanstream.co/cogecomedia/CFGLFM.stream/playlist.m3u8",
-  "logo": "./images/stations/cfgl-fm.png"
+  "src": "https://playerservices.streamtheworld.com/api/livestream-redirect/CFGLFMAAC.m3u8",
+  "logo": "cfgl-fm.png"
 }, {
   "title": "WKND",
   "description": "Québec",
-  "src": "http://streaming.cjec.leclerccommunication.ca:8000/cjec.mp3",
-  "logo": "./images/stations/cjec-fm.png"
+  "src": "https://streaming2.cjec.leclerccommunication.ca/proxy/wknd/cjec.mp3",
+  "logo": "cjec-fm.png"
 }, {
   "title": "ICI Radio-Canada Première",
   "description": "Québec",
   "src": "https://rcavliveaudio.akamaized.net/hls/live/2006953/P-2QQUE0_QUE/playlist.m3u8",
-  "logo": "./images/stations/ircp-fm.png"
+  "logo": "ircp-fm.png"
 }, {
   "title": "91.9 Sport",
   "description": "Montréal",
-  "src": "http://icecast-cklx.rncm.ca/cklx.aac",
-  "logo": "./images/stations/cklx-fm.png"
+  "src": "https://stream.919sports.ca/cklx.mp3",
+  "logo": "cklx-fm.png"
 }, {
   "title": "CHOM",
   "description": "Montréal",
-  "src": "http://16863.live.streamtheworld.com/CHOMFMAAC.aac",
-  "logo": "./images/stations/chom-fm.png"
+  "src": "https://14553.live.streamtheworld.com/CHOMFMAAC.aac",
+  "logo": "chom-fm.png"
 }, {
   "title": "QUB Radio",
   "description": "Montréal",
   "src": "https://19293.live.streamtheworld.com/QUB_RADIOAAC.aac",
-  "logo": "./images/stations/qub-web.png"
+  "logo": "qub-web.png"
 }]

@@ -8,13 +8,13 @@
 </template>
 
 <script>
-  import Player from './popup/Player.vue'
-  import Navbar from './popup/Navbar.vue'
-  import Station from './popup/Station.vue'
-  import Bottom from './popup/Footer.vue'
+  import Player from './components/Player.vue'
+  import Navbar from './components/Navbar.vue'
+  import Station from './components/Station.vue'
+  import Bottom from './components/Footer.vue'
 
-  import stations from '../stations.json'
-  import Storage from '../storage.js'
+  import stations from './stations.json'
+  import Storage from './storage.js'
 
   export default {
     name: 'Popup',
@@ -36,6 +36,7 @@
         this.currentTab = tabNumber
       },
       play (station) {
+        Storage.set('active', station)
         this.$emit('play', this.station = station)
       }
     },
@@ -49,11 +50,12 @@
       }
     },
     created () {
-      Storage.get('station', (err, station) => {
+      document.title = chrome.i18n.getMessage('name')
+      Storage.get('active', (err, station) => {
         if (!err && station) {
           this.station = station
         } else {
-          Storage.set('station', this.station)
+          Storage.set('active', this.station)
         }
       })
     }
@@ -79,11 +81,21 @@
     }
   }
 
-  body{
-    width: 320px;
-    padding: 0;
+  body {
     margin: 0;
     background-color: var(--background-color);
     font-family: Arial;
+  }
+
+  #app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .popup {
+    width: 320px;
+    border: 1px solid var(--border-color);
   }
 </style>
