@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "__MSG_name__",
-  "version": "2.6.8",
+  "version": "2.7.9",
   "default_locale": "fr",
   "description": "__MSG_description__",
   "author": "David Landry",
@@ -12,15 +12,13 @@
   "permissions": [
     "storage"
   ],
-  "action": {},
+  "action": {
+    "default_title": "__MSG_name__"
+  },
   "icons": {
     "16": "icon16.png",
     "32": "icon32.png",
     "48": "icon48.png",
     "128": "icon128.png"
-  },
-  "options_ui": {
-    "page": "popup/index.html",
-    "open_in_tab": true
   }
 }

@@ -54,10 +54,10 @@
   "src": "https://streaming2.cjec.leclerccommunication.ca/proxy/wknd/cjec.mp3",
   "logo": "cjec-fm.png"
 }, {
-  "title": "ICI Radio-Canada Première",
+  "title": "Radio Pirate Live",
   "description": "Québec",
-  "src": "https://rcavliveaudio.akamaized.net/hls/live/2006953/P-2QQUE0_QUE/playlist.m3u8",
-  "logo": "ircp-fm.png"
+  "src": "https://www.radioking.com/play/radio-pirate-live/554380",
+  "logo": "radio-pirate-live-fm.png"
 }, {
   "title": "91.9 Sport",
   "description": "Montréal",

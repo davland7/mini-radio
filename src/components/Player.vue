@@ -47,7 +47,6 @@
     },
     methods: {
       play (station) {
-        document.title = station.title
         this.audio.playSrc(station.src)
         this.stopped = false
       },

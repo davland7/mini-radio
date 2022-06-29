@@ -96,6 +96,5 @@
 
   .popup {
     width: 320px;
-    border: 1px solid var(--border-color);
   }
 </style>
