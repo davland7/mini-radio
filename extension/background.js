@@ -8,7 +8,7 @@ API.action.onClicked.addListener(function() {
       } else {
         API.windows.getCurrent(function(tab) {
           const width = 336;
-          const height = 526;
+          const height = 524;
           const top = Math.round((tab.height - height) * 0.5 + tab.top);
           const left = Math.round((tab.width - width) * 0.5 + tab.left);
 
