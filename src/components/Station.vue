@@ -1,11 +1,11 @@
 <template>
   <div class="station">
-    <div @click="play" :title="messages.play" class="station__button">
+    <button @click="play" :title="messages.play" class="station__button">
       <img :src="require(`@/images/${station.logo}`)" class="station__logo" />
       <svg viewBox="0 0 16 16" class="station__play">
         <path d="M3 2l10 6-10 6z"></path>
       </svg>
-    </div>
+    </button>
     <div class="station__text">
       <strong>{{ station.title }}</strong>
       <span>{{ station.description }}</span>

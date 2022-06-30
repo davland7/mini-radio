@@ -1,7 +1,7 @@
 <template>
   <div class="volume">
     <div class="volume__stade">
-      <div @click="mute" v-html="icon"></div>
+      <button @click="mute" v-html="icon"></button>
     </div>
     <div class="volume__control">
       <input v-on:input="setVolume($event.target.value)" :value="value" type="range" max="1.0" min="0.0" step="0.1" class="volume__range" />

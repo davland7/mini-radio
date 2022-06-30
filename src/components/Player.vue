@@ -2,7 +2,7 @@
   <div class="player">
     <div @click="toggle" :title="action" class="player__button">
       <img :src="require(`@/images/${station.logo}`)" class="player__logo" />
-      <svg v-if="stopped" viewBox="0 0 16 16" class="player__toggle play">
+      <svg v-if="!played" viewBox="0 0 16 16" class="player__toggle play">
         <path d="M3 2l10 6-10 6z"></path>
       </svg>
       <svg v-else viewBox="0 0 16 16" class="player__toggle stop">
@@ -36,7 +36,7 @@
     data () {
       return {
         audio: null,
-        stopped: true,
+        played: false,
         muted: false,
         volume: 0.2,
         messages: {
@@ -48,14 +48,14 @@
     methods: {
       play (station) {
         this.audio.playSrc(station.src)
-        this.stopped = false
+        this.played = true
       },
       toggle () {
-        if (this.stopped) {
+        if (!this.played) {
           this.play(this.station)
         } else {
           this.audio.stop()
-          this.stopped = true
+          this.played = false
         }
       },
       setVolume (value) {
@@ -67,7 +67,7 @@
     },
     computed: {
       action () {
-        return this.stopped ? this.messages.play : this.messages.stop
+        return this.played ? this.messages.stop : this.messages.play
       }
     },
     created () {
