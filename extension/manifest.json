@@ -5,7 +5,7 @@
   "default_locale": "fr",
   "description": "__MSG_description__",
   "author": "David Landry",
-  "homepage_url": "https://github.com/davland7/miniradio",
+  "homepage_url": "https://github.com/davland7/mini-radio",
   "background": {
     "service_worker": "background.js"
   },
