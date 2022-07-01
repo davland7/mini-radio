@@ -1,12 +1,12 @@
 <template>
   <div class="navbar">
     <div class="navbar__logo">
-      <img :src="require('@/images/logo.png')" />
+      <img :src="require('@/images/logo.png')" alt="" />
       {{ messages.name }}
     </div>
     <div class="navbar__tabs">
-      <div @click="tab(index)" v-for="(tabNumber, index) in totalTabs" :key="index" class="navbar__tab" :class="{'navbar__tab--current': currentTab === index}">
-          {{ tabNumber }}
+      <div @click="tab(index)" @keyup.enter="tab(index)" v-for="(tabNumber, index) in totalTabs" :key="index" class="navbar__tab" :class="{'navbar__tab--current': currentTab === index}" tabindex="0" role="button">
+        <span class="navbar__list">{{ messages.list }}</span> {{ tabNumber }}
       </div>
     </div>
   </div>
@@ -23,7 +23,8 @@
     data () {
       return {
         messages: {
-          name: chrome.i18n.getMessage('name')
+          name: chrome.i18n.getMessage('name'),
+          list: chrome.i18n.getMessage('list')
         }
       }
     },
@@ -55,6 +56,17 @@
         width: 24px;
         height: 24px;
       }
+    }
+
+    &__list {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
     }
 
     &__tabs {

@@ -1,11 +1,11 @@
 <template>
   <div class="player">
-    <div @click="toggle" :title="action" class="player__button">
-      <img :src="require(`@/images/${station.logo}`)" class="player__logo" />
-      <svg v-if="!played" viewBox="0 0 16 16" class="player__toggle play">
+    <div @click="toggle" @keyup.enter="toggle" :title="action" class="player__button" tabindex="0" role="button">
+      <img :src="require(`@/images/${station.logo}`)" :alt="station.title" class="player__logo" />
+      <svg aria-hidden="true" v-if="!played" viewBox="0 0 16 16" class="player__toggle play">
         <path d="M3 2l10 6-10 6z"></path>
       </svg>
-      <svg v-else viewBox="0 0 16 16" class="player__toggle stop">
+      <svg aria-hidden="true" v-else viewBox="0 0 16 16" class="player__toggle stop">
         <path d="M2 2h12v12h-12z"></path>
       </svg>
     </div>

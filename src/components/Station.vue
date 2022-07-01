@@ -1,11 +1,11 @@
 <template>
   <div class="station">
-    <button @click="play" :title="messages.play" class="station__button">
-      <img :src="require(`@/images/${station.logo}`)" class="station__logo" />
-      <svg viewBox="0 0 16 16" class="station__play">
+    <div @click="play" @keyup.enter="play" :title="messages.play" class="station__button" tabindex="0" role="button" aria-pressed="false">
+      <img :src="require(`@/images/${station.logo}`)" :alt="station.title" class="station__logo" />
+      <svg aria-hidden="true" viewBox="0 0 16 16" class="station__play">
         <path d="M3 2l10 6-10 6z"></path>
       </svg>
-    </button>
+    </div>
     <div class="station__text">
       <strong>{{ station.title }}</strong>
       <span>{{ station.description }}</span>

@@ -13,5 +13,14 @@
   },
   "stop": {
     "message": "Arrêter"
+  },
+  "mute": {
+    "message": "Sourdine"
+  },
+  "volume": {
+    "message": "Volume"
+  },
+  "list": {
+    "message": "liste"
   }
 }
