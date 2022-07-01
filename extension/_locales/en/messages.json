@@ -1,0 +1,26 @@
+{
+  "name": {
+    "message": "Mini Radio"
+  },
+  "description": {
+    "message": "Audio player from the main radio stations in Montreal and Quebec."
+  },
+  "github": {
+    "message": "GitHub"
+  },
+  "play": {
+    "message": "Play"
+  },
+  "stop": {
+    "message": "Stop"
+  },
+  "mute": {
+    "message": "Mute"
+  },
+  "volume": {
+    "message": "Volume"
+  },
+  "list": {
+    "message": "list"
+  }
+}
