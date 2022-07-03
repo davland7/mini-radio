@@ -14,23 +14,23 @@
 </template>
 
 <script>
+  import { getMessage } from '../utils'
+
   export default {
     name: 'Station',
-    props: [
-      'station'
-    ],
+    props: {
+      station: Object
+    },
     data () {
       return {
         messages: {
-          play: chrome.i18n.getMessage('play')
+          play: getMessage('play')
         }
       }
     },
     methods: {
       play () {
-        const station = this.station
-
-        this.$emit('play', station)
+        this.$emit('play', this.station)
       }
     }
   }

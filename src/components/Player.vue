@@ -16,7 +16,7 @@
       <div class="player__description">
         {{ station.description }}
       </div>
-      <volume @setVolume="setVolume" @mute="mute" :audio="{volume, muted}"></volume>
+      <volume @setVolume="setVolume" @mute="mute" :volume="volume"></volume>
     </div>
   </div>
 </template>
@@ -25,14 +25,16 @@
   import rPlayer from '@davland7/rplayer'
   import Volume from './Volume.vue'
 
+  import { getMessage } from '../utils'
+
   export default {
     name: 'Player',
     components: {
       Volume
     },
-    props: [
-      'station'
-    ],
+    props: {
+      station: Object
+    },
     data () {
       return {
         audio: null,
@@ -40,8 +42,8 @@
         muted: false,
         volume: 0.2,
         messages: {
-          play: chrome.i18n.getMessage('play'),
-          stop: chrome.i18n.getMessage('stop')
+          play: getMessage('play'),
+          stop: getMessage('stop')
         }
       }
     },

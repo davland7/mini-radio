@@ -5,6 +5,9 @@
   "description": {
     "message": "Audio player from the main radio stations in Montreal and Quebec."
   },
+  "locale": {
+    "message": "en"
+  },
   "github": {
     "message": "GitHub"
   },

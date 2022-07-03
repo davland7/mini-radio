@@ -1,7 +1,7 @@
 <template>
   <div class="popup">
     <player :station="station"></player>
-    <navbar @tabClick="tabs" :totalTabs="totalTabs" :stationsPerTab="stationsPerTab" :currentTab="currentTab"></navbar>
+    <navbar @tab="tabs" :totalTabs="totalTabs" :stationsPerTab="stationsPerTab" :currentTab="currentTab"></navbar>
     <station @play="play" :station="station" :key="index" v-for="(station, index) in stations"></station>
     <bottom></bottom>
   </div>
@@ -14,7 +14,7 @@
   import Bottom from './components/Footer.vue'
 
   import stations from './stations.json'
-  import Storage from './storage.js'
+  import { setStorage, getStorage, getMessage } from './utils'
 
   export default {
     name: 'Popup',
@@ -32,30 +32,31 @@
       }
     },
     methods: {
-      tabs (tabNumber) {
+      tabs(tabNumber) {
         this.currentTab = tabNumber
       },
-      play (station) {
-        Storage.set('active', station)
+      play(station) {
+        setStorage('active', station)
         this.$emit('play', this.station = station)
       }
     },
     computed: {
-      totalTabs () {
+      totalTabs() {
         return Math.ceil(stations.length / this.stationsPerTab)
       },
-      stations () {
+      stations() {
         const index = this.currentTab * this.stationsPerTab
         return stations.slice(index, index + this.stationsPerTab)
       }
     },
     created () {
-      document.title = chrome.i18n.getMessage('name')
-      Storage.get('active', (err, station) => {
+      document.documentElement.lang = getMessage('locale')
+      document.title = getMessage('name')
+      getStorage('active', (err, station) => {
         if (!err && station) {
           this.station = station
         } else {
-          Storage.set('active', this.station)
+          setStorage('active', this.station)
         }
       })
     }

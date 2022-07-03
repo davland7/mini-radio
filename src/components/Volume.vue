@@ -14,18 +14,20 @@
 </template>
 
 <script>
+  import { getMessage } from '../utils'
+
   export default {
     name: 'Volume',
-    props: [
-      'audio'
-    ],
+    props: {
+      volume: Number
+    },
     data () {
       return {
-        value: this.audio.volume,
-        muted: this.audio.muted,
+        value: this.volume,
+        muted: false,
         messages: {
-          mute: chrome.i18n.getMessage('mute'),
-          volume: chrome.i18n.getMessage('volume')
+          mute: getMessage('mute'),
+          volume: getMessage('volume')
         }
       }
     },
@@ -39,7 +41,7 @@
     },
     computed: {
       pourcent () {
-        return (this.value * 100) + '%'
+        return `${this.value * 100}%`
       },
       icon () {
         switch(true) {

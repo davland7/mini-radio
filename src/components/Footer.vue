@@ -4,25 +4,22 @@
       {{messages.version}}
     </div>
     <div class="footer__github">
-      <a @click="githubTrack" :href="messages.homePageUrl" target="_blank" class="footer__link">{{ messages.github }}</a>
+      <a :href="messages.homePageUrl" target="_blank" class="footer__link">{{ messages.github }}</a>
     </div>
   </div>
 </template>
 
 <script>
+  import { getMessage, getManifest } from '../utils'
+
   export default {
     name: 'Footer',
-    methods: {
-      githubTrack () {
-
-      }
-    },
     data () {
       return {
         messages: {
-          version: chrome.runtime.getManifest().version,
-          homePageUrl: chrome.runtime.getManifest().homepage_url,
-          github: chrome.i18n.getMessage('github')
+          version: getManifest().version,
+          homePageUrl: getManifest().homepage_url,
+          github: getMessage('github')
         }
       }
     }

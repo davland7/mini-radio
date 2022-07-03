@@ -13,24 +13,26 @@
 </template>
 
 <script>
+  import { getMessage } from '../utils'
+
   export default {
     name: 'Tabs',
-    props: [
-      'currentTab',
-      'totalTabs',
-      'stationsPerTab'
-    ],
+    props: {
+      currentTab: Number,
+      totalTabs: Number,
+      stationsPerTab: Number
+    },
     data () {
       return {
         messages: {
-          name: chrome.i18n.getMessage('name'),
-          list: chrome.i18n.getMessage('list')
+          name: getMessage('name'),
+          list: getMessage('list')
         }
       }
     },
     methods: {
       tab (index) {
-        this.$emit('tabClick', index)
+        this.$emit('tab', index)
       }
     }
   }
