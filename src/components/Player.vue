@@ -84,7 +84,7 @@
       this.audio = new rPlayer()
       this.volume = this.audio.volume
 
-      this.$parent.$on('play', this.play)
+      this.emitter.on('play', this.play)
     },
     methods: {
       play (station) {

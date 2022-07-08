@@ -72,7 +72,7 @@
       },
       play(station) {
         setStorage('active', station)
-        this.$emit('play', this.station = station)
+        this.emitter.emit('play', this.station = station)
       }
     }
   }
