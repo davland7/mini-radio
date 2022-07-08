@@ -53,7 +53,7 @@
   import { getMessage } from '../utils'
 
   export default {
-    name: 'ComponentPlayer',
+    name: 'PlayerComponent',
     components: {
       Volume
     },

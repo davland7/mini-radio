@@ -66,7 +66,7 @@
   import { getMessage } from '../utils'
 
   export default {
-    name: 'ComponentVolume',
+    name: 'VolumeComponent',
     props: {
       volume: {
         type: Number,

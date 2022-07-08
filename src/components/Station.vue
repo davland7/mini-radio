@@ -33,7 +33,7 @@
   import { getMessage } from '../utils'
 
   export default {
-    name: 'ComponentStation',
+    name: 'StationComponent',
     props: {
       station: {
         type: Object,

@@ -17,7 +17,7 @@
   import { getMessage, getManifest } from '../utils'
 
   export default {
-    name: 'ComponentFooter',
+    name: 'FooterComponent',
     data () {
       return {
         messages: {

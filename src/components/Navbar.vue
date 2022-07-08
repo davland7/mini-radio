@@ -28,7 +28,7 @@
   import { getMessage } from '../utils'
 
   export default {
-    name: 'ComponentTabs',
+    name: 'NavbarComponent',
     props: {
       currentTab: {
         type: Number,

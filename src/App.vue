@@ -15,7 +15,7 @@
       :station="item"
       @play="play"
     />
-    <footerbar />
+    <footer-bar />
   </div>
 </template>
 
@@ -23,18 +23,18 @@
   import Player from './components/Player.vue'
   import Navbar from './components/Navbar.vue'
   import Station from './components/Station.vue'
-  import Footerbar from './components/Footer.vue'
+  import FooterBar from './components/Footer.vue'
 
   import stations from './stations.json'
   import { setStorage, getStorage, getMessage } from './utils'
 
   export default {
-    name: 'ComponentPopup',
+    name: 'PopupApp',
     components: {
       Player,
       Navbar,
       Station,
-      Footerbar
+      FooterBar
     },
     emits: [
       'play'
