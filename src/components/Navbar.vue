@@ -28,12 +28,24 @@
   import { getMessage } from '../utils'
 
   export default {
-    name: 'Tabs',
+    name: 'ComponentTabs',
     props: {
-      currentTab: Number,
-      totalTabs: Number,
-      stationsPerTab: Number
+      currentTab: {
+        type: Number,
+        required: true
+      },
+      totalTabs: {
+        type: Number,
+        required: true
+      },
+      stationsPerTab: {
+        type: Number,
+        required: true
+      }
     },
+    emits: [
+      'tab'
+    ],
     data () {
       return {
         messages: {

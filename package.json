@@ -9,7 +9,7 @@
     "build": "vue-cli-service build",
     "watch": "vue-cli-service build --watch --mode development",
     "lint": "vue-cli-service lint ./src/",
-    "test": "node tests/stations.mjs"
+    "test": "node --trace-warnings tests/stations.mjs"
   },
   "dependencies": {
     "@davland7/rplayer": "^2.0.5",

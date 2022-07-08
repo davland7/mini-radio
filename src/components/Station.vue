@@ -33,10 +33,16 @@
   import { getMessage } from '../utils'
 
   export default {
-    name: 'Station',
+    name: 'ComponentStation',
     props: {
-      station: Object
+      station: {
+        type: Object,
+        required: true
+      }
     },
+    emits: [
+      'play'
+    ],
     data () {
       return {
         messages: {

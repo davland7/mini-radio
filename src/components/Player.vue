@@ -39,7 +39,7 @@
       </div>
       <volume
         :volume="volume"
-        @setVolume="setVolume"
+        @set-volume="setVolume"
         @mute="mute"
       />
     </div>
@@ -53,12 +53,15 @@
   import { getMessage } from '../utils'
 
   export default {
-    name: 'Player',
+    name: 'ComponentPlayer',
     components: {
       Volume
     },
     props: {
-      station: Object
+      station: {
+        type: Object,
+        required: true
+      }
     },
     data () {
       return {

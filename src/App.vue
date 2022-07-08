@@ -1,6 +1,8 @@
 <template>
   <div class="popup">
-    <player :station="station" />
+    <player
+      :station="station"
+    />
     <navbar
       :total-tabs="totalTabs"
       :stations-per-tab="stationsPerTab"
@@ -8,12 +10,12 @@
       @tab="tabs"
     />
     <station
-      v-for="(station, index) in stations"
+      v-for="(item, index) in stations"
       :key="index"
-      :station="station"
+      :station="item"
       @play="play"
     />
-    <bottom />
+    <footerbar />
   </div>
 </template>
 
@@ -21,19 +23,22 @@
   import Player from './components/Player.vue'
   import Navbar from './components/Navbar.vue'
   import Station from './components/Station.vue'
-  import Bottom from './components/Footer.vue'
+  import Footerbar from './components/Footer.vue'
 
   import stations from './stations.json'
   import { setStorage, getStorage, getMessage } from './utils'
 
   export default {
-    name: 'Popup',
+    name: 'ComponentPopup',
     components: {
       Player,
       Navbar,
       Station,
-      Bottom
+      Footerbar
     },
+    emits: [
+      'play'
+    ],
     data () {
       return {
         station: stations[0],
