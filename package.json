@@ -6,9 +6,9 @@
   "author": "David Landry <davland7@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "watch": "vue-cli-service build --watch --mode development",
+    "lint": "vue-cli-service lint ./src/",
     "test": "node tests/stations.mjs"
   },
   "dependencies": {

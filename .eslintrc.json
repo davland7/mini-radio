@@ -1,9 +1,0 @@
-{
-  "env": {
-    "browser": true,
-    "es2022": true,
-    "node": true,
-    "webextensions": true
-  },
-  "extends": ["plugin:vue/base"]
-}

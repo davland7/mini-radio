@@ -1,11 +1,23 @@
 <template>
   <div class="navbar">
     <div class="navbar__logo">
-      <img :src="require('@/images/logo.png')" alt="" />
+      <img
+        :src="require('@/images/logo.png')"
+        alt=""
+      >
       {{ messages.name }}
     </div>
     <div class="navbar__tabs">
-      <div @click="tab(index)" @keyup.enter="tab(index)" v-for="(tabNumber, index) in totalTabs" :key="index" class="navbar__tab" :class="{'navbar__tab--current': currentTab === index}" tabindex="0" role="button">
+      <div
+        v-for="(tabNumber, index) in totalTabs"
+        :key="index"
+        class="navbar__tab"
+        :class="{'navbar__tab--current': currentTab === index}"
+        tabindex="0"
+        role="button"
+        @click="tab(index)"
+        @keyup.enter="tab(index)"
+      >
         <span class="navbar__list">{{ messages.list }}</span> {{ tabNumber }}
       </div>
     </div>

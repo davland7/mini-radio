@@ -1,9 +1,19 @@
 <template>
   <div class="popup">
-    <player :station="station"></player>
-    <navbar @tab="tabs" :totalTabs="totalTabs" :stationsPerTab="stationsPerTab" :currentTab="currentTab"></navbar>
-    <station @play="play" :station="station" :key="index" v-for="(station, index) in stations"></station>
-    <bottom></bottom>
+    <player :station="station" />
+    <navbar
+      :total-tabs="totalTabs"
+      :stations-per-tab="stationsPerTab"
+      :current-tab="currentTab"
+      @tab="tabs"
+    />
+    <station
+      v-for="(station, index) in stations"
+      :key="index"
+      :station="station"
+      @play="play"
+    />
+    <bottom />
   </div>
 </template>
 
@@ -31,15 +41,6 @@
         stationsPerTab: 5
       }
     },
-    methods: {
-      tabs(tabNumber) {
-        this.currentTab = tabNumber
-      },
-      play(station) {
-        setStorage('active', station)
-        this.$emit('play', this.station = station)
-      }
-    },
     computed: {
       totalTabs() {
         return Math.ceil(stations.length / this.stationsPerTab)
@@ -59,6 +60,15 @@
           setStorage('active', this.station)
         }
       })
+    },
+    methods: {
+      tabs(tabNumber) {
+        this.currentTab = tabNumber
+      },
+      play(station) {
+        setStorage('active', station)
+        this.$emit('play', this.station = station)
+      }
     }
   }
 </script>

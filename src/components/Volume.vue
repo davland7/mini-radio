@@ -1,11 +1,30 @@
 <template>
   <div class="volume">
     <div class="volume__stade">
-      <div @click="mute" @keyup.enter="mute" v-html="icon" tabindex="0" role="button" :aria-label="messages.mute"></div>
+      <div
+        tabindex="0"
+        role="button"
+        :aria-label="messages.mute"
+        @click="mute"
+        @keyup.enter="mute"
+        v-html="icon"
+      />
     </div>
     <div class="volume__control">
-      <input id="volume" v-on:input="setVolume($event.target.value)" :value="value" type="range" max="1.0" min="0.0" step="0.1" class="volume__range" />
-      <label for="volume" class="volume__label">{{ messages.volume }}</label>
+      <input
+        id="volume"
+        :value="value"
+        type="range"
+        max="1.0"
+        min="0.0"
+        step="0.1"
+        class="volume__range"
+        @input="setVolume($event.target.value)"
+      >
+      <label
+        for="volume"
+        class="volume__label"
+      >{{ messages.volume }}</label>
     </div>
     <div class="volume__pourcent">
       {{ pourcent }}
@@ -31,14 +50,6 @@
         }
       }
     },
-    methods: {
-      setVolume (value) {
-        this.$emit('setVolume', this.value = value)
-      },
-      mute () {
-        this.$emit('mute', this.muted = !this.muted)
-      }
-    },
     computed: {
       pourcent () {
         return `${this.value * 100}%`
@@ -56,6 +67,14 @@
           default:
             return '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M13 30a1 1 0 0 1-.707-.293L4.586 22H1a1 1 0 0 1-1-1V11a1 1 0 0 1 1-1h3.586l7.707-7.707A1 1 0 0 1 14 3v26a1.002 1.002 0 0 1-1 1z"/></svg>'
         }
+      }
+    },
+    methods: {
+      setVolume (value) {
+        this.$emit('setVolume', this.value = value)
+      },
+      mute () {
+        this.$emit('mute', this.muted = !this.muted)
       }
     }
   }

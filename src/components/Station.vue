@@ -1,9 +1,25 @@
 <template>
   <div class="station">
-    <div @click="play" @keyup.enter="play" :title="messages.play" class="station__button" tabindex="0" role="button" aria-pressed="false">
-      <img :src="require(`@/images/${station.logo}`)" :alt="station.title" class="station__logo" />
-      <svg aria-hidden="true" viewBox="0 0 16 16" class="station__play">
-        <path d="M3 2l10 6-10 6z"></path>
+    <div
+      :title="messages.play"
+      class="station__button"
+      tabindex="0"
+      role="button"
+      aria-pressed="false"
+      @click="play"
+      @keyup.enter="play"
+    >
+      <img
+        :src="require(`@/images/${station.logo}`)"
+        :alt="station.title"
+        class="station__logo"
+      >
+      <svg
+        aria-hidden="true"
+        viewBox="0 0 16 16"
+        class="station__play"
+      >
+        <path d="M3 2l10 6-10 6z" />
       </svg>
     </div>
     <div class="station__text">

@@ -34,6 +34,11 @@
   "src": "https://streaming2.cfel.leclerccommunication.ca/proxy/cfel/cfel.mp3",
   "logo": "cfel-fm.png"
 }, {
+  "title": "Radio Pirate Live",
+  "description": "Jeff Fillion",
+  "src": "https://www.radioking.com/play/radio-pirate-live/554380",
+  "logo": "radio-pirate-live-fm.png"
+}, {
   "title": "Énergie 94.3",
   "description": "Montréal",
   "src": "https://24483.live.streamtheworld.com/CKMFFMAAC.aac",
@@ -53,11 +58,6 @@
   "description": "Québec",
   "src": "https://streaming2.cjec.leclerccommunication.ca/proxy/wknd/cjec.mp3",
   "logo": "cjec-fm.png"
-}, {
-  "title": "Radio Pirate Live",
-  "description": "Québec",
-  "src": "https://www.radioking.com/play/radio-pirate-live/554380",
-  "logo": "radio-pirate-live-fm.png"
 }, {
   "title": "91.9 Sport",
   "description": "Montréal",

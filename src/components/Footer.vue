@@ -1,10 +1,14 @@
 <template>
   <div class="footer">
     <div class="footer__version">
-      {{messages.version}}
+      {{ messages.version }}
     </div>
     <div class="footer__github">
-      <a :href="messages.homePageUrl" target="_blank" class="footer__link">{{ messages.github }}</a>
+      <a
+        :href="messages.homePageUrl"
+        target="_blank"
+        class="footer__link"
+      >{{ messages.github }}</a>
     </div>
   </div>
 </template>
@@ -13,7 +17,7 @@
   import { getMessage, getManifest } from '../utils'
 
   export default {
-    name: 'Footer',
+    name: 'Bottom',
     data () {
       return {
         messages: {

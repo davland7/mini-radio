@@ -1,12 +1,33 @@
 <template>
   <div class="player">
-    <div @click="toggle" @keyup.enter="toggle" :title="action" class="player__button" tabindex="0" role="button">
-      <img :src="require(`@/images/${station.logo}`)" :alt="station.title" class="player__logo" />
-      <svg aria-hidden="true" v-if="!played" viewBox="0 0 16 16" class="player__toggle play">
-        <path d="M3 2l10 6-10 6z"></path>
+    <div
+      :title="action"
+      class="player__button"
+      tabindex="0"
+      role="button"
+      @click="toggle"
+      @keyup.enter="toggle"
+    >
+      <img
+        :src="require(`@/images/${station.logo}`)"
+        :alt="station.title"
+        class="player__logo"
+      >
+      <svg
+        v-if="!played"
+        aria-hidden="true"
+        viewBox="0 0 16 16"
+        class="player__toggle play"
+      >
+        <path d="M3 2l10 6-10 6z" />
       </svg>
-      <svg aria-hidden="true" v-else viewBox="0 0 16 16" class="player__toggle stop">
-        <path d="M2 2h12v12h-12z"></path>
+      <svg
+        v-else
+        aria-hidden="true"
+        viewBox="0 0 16 16"
+        class="player__toggle stop"
+      >
+        <path d="M2 2h12v12h-12z" />
       </svg>
     </div>
     <div class="player__information">
@@ -16,7 +37,11 @@
       <div class="player__description">
         {{ station.description }}
       </div>
-      <volume @setVolume="setVolume" @mute="mute" :volume="volume"></volume>
+      <volume
+        :volume="volume"
+        @setVolume="setVolume"
+        @mute="mute"
+      />
     </div>
   </div>
 </template>
@@ -47,6 +72,17 @@
         }
       }
     },
+    computed: {
+      action () {
+        return this.played ? this.messages.stop : this.messages.play
+      }
+    },
+    created () {
+      this.audio = new rPlayer()
+      this.volume = this.audio.volume
+
+      this.$parent.$on('play', this.play)
+    },
     methods: {
       play (station) {
         this.audio.playSrc(station.src)
@@ -66,17 +102,6 @@
       mute () {
         this.audio.mute()
       }
-    },
-    computed: {
-      action () {
-        return this.played ? this.messages.stop : this.messages.play
-      }
-    },
-    created () {
-      this.audio = new rPlayer()
-      this.volume = this.audio.volume
-
-      this.$parent.$on('play', this.play)
     }
   }
 </script>
