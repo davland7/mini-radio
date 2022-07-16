@@ -39,6 +39,7 @@
       </div>
       <volume
         :volume="volume"
+        :messages="volumeMessages"
         @set-volume="setVolume"
         @mute="mute"
       />
@@ -50,14 +51,16 @@
   import rPlayer from '@davland7/rplayer'
   import Volume from './Volume.vue'
 
-  import { getMessage } from '../utils'
-
   export default {
     name: 'PlayerComponent',
     components: {
       Volume
     },
     props: {
+      messages: {
+        type: Object,
+        required: true
+      },
       station: {
         type: Object,
         required: true
@@ -68,16 +71,18 @@
         audio: null,
         played: false,
         muted: false,
-        volume: 0.2,
-        messages: {
-          play: getMessage('play'),
-          stop: getMessage('stop')
-        }
+        volume: 0.2
       }
     },
     computed: {
       action () {
         return this.played ? this.messages.stop : this.messages.play
+      },
+      volumeMessages () {
+        return {
+          volume: this.messages.volume,
+          mute: this.messages.mute
+        }
       }
     },
     created () {
@@ -113,7 +118,7 @@
   .player {
     display: flex;
     justify-content: space-between;
-    height: 72px;
+    height: 76px;
     padding: 2px;
     margin: 2px;
     background: var(--content-color);
@@ -136,8 +141,8 @@
 
     &__toggle {
       position: absolute;
-      width: 42px;
-      height: 42px;
+      width: 100%;
+      height: 100%;
       padding: 14px;
       opacity: 0;
 

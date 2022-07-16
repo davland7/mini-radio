@@ -2,20 +2,25 @@
   <div class="popup">
     <player
       :station="station"
+      :messages="messages.player"
     />
     <navbar
       :total-tabs="totalTabs"
       :stations-per-tab="stationsPerTab"
       :current-tab="currentTab"
+      :messages="messages.navbar"
       @tab="tabs"
     />
     <station
       v-for="(item, index) in stations"
       :key="index"
       :station="item"
+      :messages="messages.station"
       @play="play"
     />
-    <footer-bar />
+    <footer-bar
+      :messages="messages.footer"
+    />
   </div>
 </template>
 
@@ -26,7 +31,7 @@
   import FooterBar from './components/Footer.vue'
 
   import stations from './stations.json'
-  import { setStorage, getStorage, getMessage } from './utils'
+  import { setStorage, getStorage, getMessage, getManifest } from './utils'
 
   export default {
     name: 'PopupApp',
@@ -43,7 +48,27 @@
       return {
         station: stations[0],
         currentTab: 0,
-        stationsPerTab: 5
+        stationsPerTab: 5,
+        messages: {
+          player: {
+            play: getMessage('play'),
+            stop: getMessage('stop'),
+            mute: getMessage('mute'),
+            volume: getMessage('volume')
+          },
+          navbar: {
+            name: getMessage('name'),
+            list: getMessage('list')
+          },
+          station: {
+            play: getMessage('play')
+          },
+          footer: {
+            version: getManifest().version,
+            homePageUrl: getManifest().homepage_url,
+            github: getMessage('github')
+          }
+        }
       }
     },
     computed: {
@@ -97,10 +122,15 @@
     }
   }
 
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     margin: 0;
     background-color: var(--background-color);
     font-family: Arial;
+    overflow: hidden;
   }
 
   #app {
@@ -112,5 +142,6 @@
 
   .popup {
     width: 320px;
+    margin: 2px;
   }
 </style>

@@ -5,26 +5,23 @@
     </div>
     <div class="footer__github">
       <a
+        class="footer__link"
         :href="messages.homePageUrl"
         target="_blank"
-        class="footer__link"
-      >{{ messages.github }}</a>
+      >
+        {{ messages.github }}
+      </a>
     </div>
   </div>
 </template>
 
 <script>
-  import { getMessage, getManifest } from '../utils'
-
   export default {
     name: 'FooterComponent',
-    data () {
-      return {
-        messages: {
-          version: getManifest().version,
-          homePageUrl: getManifest().homepage_url,
-          github: getMessage('github')
-        }
+    props: {
+      messages: {
+        type: Object,
+        required: true
       }
     }
   }

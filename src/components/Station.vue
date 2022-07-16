@@ -30,11 +30,13 @@
 </template>
 
 <script>
-  import { getMessage } from '../utils'
-
   export default {
     name: 'StationComponent',
     props: {
+      messages: {
+        type: Object,
+        required: true
+      },
       station: {
         type: Object,
         required: true
@@ -43,13 +45,6 @@
     emits: [
       'play'
     ],
-    data () {
-      return {
-        messages: {
-          play: getMessage('play')
-        }
-      }
-    },
     methods: {
       play () {
         this.$emit('play', this.station)
@@ -61,7 +56,7 @@
 <style lang="scss">
   .station {
     display: flex;
-    height: 60px;
+    height: 64px;
     padding: 2px;
     margin: 2px;
     border: solid 1px var(--border-color);
@@ -99,8 +94,8 @@
 
     &__play {
       position: absolute;
-      width: 40px;
-      height: 40px;
+      width: 100%;
+      height: 100%;
       padding: 9px 6px 9px 12px;
       opacity: 0;
 

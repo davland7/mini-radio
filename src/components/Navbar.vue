@@ -25,11 +25,13 @@
 </template>
 
 <script>
-  import { getMessage } from '../utils'
-
   export default {
     name: 'NavbarComponent',
     props: {
+      messages: {
+        type: Object,
+        required: true
+      },
       currentTab: {
         type: Number,
         required: true
@@ -46,14 +48,6 @@
     emits: [
       'tab'
     ],
-    data () {
-      return {
-        messages: {
-          name: getMessage('name'),
-          list: getMessage('list')
-        }
-      }
-    },
     methods: {
       tab (index) {
         this.$emit('tab', index)
@@ -78,7 +72,7 @@
       color: var(--dark-color);
 
       img {
-        padding: 0 6px;
+        margin: 0 6px;
         width: 24px;
         height: 24px;
       }

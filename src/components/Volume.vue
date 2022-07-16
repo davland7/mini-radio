@@ -63,11 +63,13 @@
 </template>
 
 <script>
-  import { getMessage } from '../utils'
-
   export default {
     name: 'VolumeComponent',
     props: {
+      messages: {
+        type: Object,
+        required: true
+      },
       volume: {
         type: Number,
         required: true
@@ -80,11 +82,7 @@
     data () {
       return {
         value: this.volume,
-        muted: false,
-        messages: {
-          mute: getMessage('mute'),
-          volume: getMessage('volume')
-        }
+        muted: false
       }
     },
     computed: {

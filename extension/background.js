@@ -7,8 +7,8 @@ API.action.onClicked.addListener(function() {
         API.windows.update(popup.windowId, { "focused": true });
       } else {
         API.windows.getCurrent(function(tab) {
-          const width = 336;
-          const height = 524;
+          const width = 332; // 320
+          const height = 512; // 484
           const top = Math.round((tab.height - height) * 0.5 + tab.top);
           const left = Math.round((tab.width - width) * 0.5 + tab.left);
 
