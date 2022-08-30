@@ -14,7 +14,7 @@
     <station
       v-for="(item, index) in stations"
       :key="index"
-      :station="item"
+      :item="item"
       :messages="messages.station"
       @play="play"
     />

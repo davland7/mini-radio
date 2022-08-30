@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Station.vue renders correctly 1`] = `
+<div
+  class="station"
+>
+  <div
+    aria-pressed="false"
+    class="station__button"
+    role="button"
+    tabindex="0"
+    title="Play"
+  >
+    <img
+      alt="92.5 The Beat"
+      class="station__logo"
+      src=""
+    />
+    <svg
+      aria-hidden="true"
+      class="station__play"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M3 2l10 6-10 6z"
+      />
+    </svg>
+  </div>
+  <div
+    class="station__text"
+  >
+    <strong>
+      92.5 The Beat
+    </strong>
+    <span>
+      Montréal
+    </span>
+  </div>
+</div>
+`;
+m50699Land
+
+m50699Land

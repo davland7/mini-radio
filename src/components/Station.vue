@@ -1,30 +1,30 @@
 <template>
   <div class="station">
     <div
-      :title="messages.play"
-      class="station__button"
-      tabindex="0"
-      role="button"
       aria-pressed="false"
+      class="station__button"
+      role="button"
+      tabindex="0"
+      :title="messages.play"
       @click="play"
       @keyup.enter="play"
     >
       <img
-        :src="require(`@/images/${station.logo}`)"
-        :alt="station.title"
+        :alt="item.title"
         class="station__logo"
+        :src="require(`@/images/${item.logo}`)"
       >
       <svg
         aria-hidden="true"
-        viewBox="0 0 16 16"
         class="station__play"
+        viewBox="0 0 16 16"
       >
         <path d="M3 2l10 6-10 6z" />
       </svg>
     </div>
     <div class="station__text">
-      <strong>{{ station.title }}</strong>
-      <span>{{ station.description }}</span>
+      <strong>{{ item.title }}</strong>
+      <span>{{ item.description }}</span>
     </div>
   </div>
 </template>
@@ -37,7 +37,7 @@
         type: Object,
         required: true
       },
-      station: {
+      item: {
         type: Object,
         required: true
       }
@@ -47,7 +47,7 @@
     ],
     methods: {
       play () {
-        this.$emit('play', this.station)
+        this.$emit('play', this.item)
       }
     }
   }
@@ -67,8 +67,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 242px;
-      padding: 0 10px;
+      margin: 0 16px;
       font-size: 14px;
       line-height: 1.5;
       color: var(--light-color);
