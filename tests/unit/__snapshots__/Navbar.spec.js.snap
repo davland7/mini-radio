@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar.vue renders correctly 1`] = `
+<div
+  class="navbar"
+>
+  <div
+    class="navbar__logo"
+  >
+    <img
+      alt=""
+      src=""
+    />
+     Mini Radio
+  </div>
+  <div
+    class="navbar__tabs"
+  >
+    
+    <div
+      class="navbar__tab"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="navbar__list"
+      >
+        List
+      </span>
+       1
+    </div>
+    <div
+      class="navbar__tab navbar__tab--current"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="navbar__list"
+      >
+        List
+      </span>
+       2
+    </div>
+    <div
+      class="navbar__tab"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="navbar__list"
+      >
+        List
+      </span>
+       3
+    </div>
+    
+  </div>
+</div>
+`;
