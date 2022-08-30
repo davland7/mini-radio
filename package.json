@@ -34,7 +34,7 @@
     "@vue/compat": "^3.2.37",
     "@vue/compiler-sfc": "^3.2.37",
     "chalk": "^5.0.1",
-    "node-fetch": "^3.2.6",
+    "node-fetch": "^3.2.10",
     "sass": "^1.53.0",
     "sass-loader": "^13.0.2"
   }
