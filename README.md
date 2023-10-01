@@ -2,7 +2,7 @@
 
 ![Radio Mini](https://user-images.githubusercontent.com/187134/29489199-4d6242fc-84e9-11e7-8de2-9fd656a541da.gif)
 
-Mini Radio est une petite extension gratuite disponible sur Google Chrome, bientôt FireFox qui fait jouer les streamings des principales stations de radio de Montréal et Québec.
+Mini Radio est une petite extension gratuite disponible sur Google Chrome, Mini Radio fait jouer les streamings des principales stations de radio de Montréal et Québec.
 
 Un moyen simple, facile d'écouter vos stations et animateurs préférés du Québec au bureau, à la maison ou partout dans le monde.
 
