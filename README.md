@@ -10,14 +10,12 @@ Un moyen simple, facile d'écouter vos stations et animateurs préférés du Qu�
 
 [![Disponible sur Chrome Web Store](https://user-images.githubusercontent.com/187134/29489211-91743dec-84e9-11e7-9892-e37b7645ad74.png)](https://chrome.google.com/webstore/detail/mini-radio/klcjochgjlcecbalpokmcldlfhngcnfh?utm_source=github)
 
-# Technical Information
+## Technical Information
 
+### rPlayer library
 
-## Link to third party libraries
-- https://github.com/vuejs
-- https://github.com/video-dev/hls.js
+This extension utilizes rPlayer, you can find more information about the library on its website: [rplayer.js.org](https://rplayer.js.org/)
 
-
-## Credits
+### Credits
 - Logo: http://www.iconarchive.com/show/qetto-2-icons-by-ampeross/radio-icon.html
 - Icons play, stop and volume: https://icomoon.io/#preview-free

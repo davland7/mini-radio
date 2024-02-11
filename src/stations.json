@@ -1,6 +1,6 @@
 [{
   "title": "92.5 The Beat",
-  "description": "Montréal",
+  "description": "Montreal",
   "src": "https://playerservices.streamtheworld.com/api/livestream-redirect/CKBEFMAAC.m3u8",
   "logo": "ckbe-fm.png"
 }, {
@@ -35,10 +35,10 @@
   "src": "https://streaming2.cjec.leclerccommunication.ca/proxy/wknd/cjec.mp3",
   "logo": "cjec-fm.png"
 }, {
-  "title": "Énergie 94.3",
-  "description": "Montréal",
-  "src": "https://24483.live.streamtheworld.com/CKMFFMAAC.aac",
-  "logo": "ckmf-fm.png"
+  "title": "CBC Radio One",
+  "description": "Montreal",
+  "src": "https://cbcradiolive.akamaized.net/hls/live/2041031/ES_R1EQQ/adaptive_192/chunklist_ao.m3u8",
+  "logo": "cbem-fm.png"
 }, {
   "title": "107,3 Rouge FM",
   "description": "Montréal",
@@ -66,7 +66,7 @@
   "logo": "cklx-fm.png"
 }, {
   "title": "CHOM",
-  "description": "Montréal",
+  "description": "Montreal",
   "src": "https://14553.live.streamtheworld.com/CHOMFMAAC.aac",
   "logo": "chom-fm.png"
 }, {

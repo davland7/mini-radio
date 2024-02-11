@@ -1,6 +1,4 @@
-node_modules/
-extension/js/popup.js
-extension/style.css
 dist/
+extension/popup
 miniradio.zip
-*.log
+node_modules/
