@@ -96,8 +96,8 @@
         this.currentTab = tabNumber
       },
       play(station) {
+        this.station = station
         setStorage('active', station)
-        this.emitter.emit('play', this.station = station)
       }
     }
   }

@@ -42,13 +42,12 @@
         required: true
       }
     },
-    emits: [
-      'play'
-    ],
-    methods: {
-      play () {
-        this.$emit('play', this.item)
+    setup(props, { emit }) {
+      const play = () => {
+        emit('play', props.item);
       }
+
+      return { play };
     }
   }
 </script>

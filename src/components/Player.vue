@@ -71,7 +71,8 @@
         audio: null,
         played: false,
         muted: false,
-        volume: 0.2
+        volume: 0.2,
+        isFirstLoad: true
       }
     },
     computed: {
@@ -88,8 +89,15 @@
     created () {
       this.audio = new rPlayer()
       this.volume = this.audio.volume
+    },
+    watch: {
+      station(station) {
+        if (!this.isFirstLoad) {
+          this.play(station);
+        }
 
-      this.emitter.on('play', this.play)
+        this.isFirstLoad = false;
+      }
     },
     methods: {
       play (station) {
