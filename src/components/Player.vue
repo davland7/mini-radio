@@ -9,7 +9,7 @@
       @keyup.enter="toggle"
     >
       <img
-        :src="require(`@/images/${station.logo}`)"
+        :src="imageSrc"
         :alt="station.title"
         class="player__logo"
       >
@@ -84,6 +84,9 @@
           volume: this.messages.volume,
           mute: this.messages.mute
         }
+      },
+      imageSrc () {
+        return `../images/${this.station.logo}`
       }
     },
     created () {
@@ -93,10 +96,10 @@
     watch: {
       station(station) {
         if (!this.isFirstLoad) {
-          this.play(station);
+          this.play(station)
         }
 
-        this.isFirstLoad = false;
+        this.isFirstLoad = false
       }
     },
     methods: {

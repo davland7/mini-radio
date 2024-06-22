@@ -41,9 +41,6 @@
       Station,
       FooterBar
     },
-    emits: [
-      'play'
-    ],
     data () {
       return {
         station: stations[0],

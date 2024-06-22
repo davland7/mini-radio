@@ -10,7 +10,26 @@ Un moyen simple, facile d'écouter vos stations et animateurs préférés du Qu�
 
 [![Disponible sur Chrome Web Store](https://user-images.githubusercontent.com/187134/29489211-91743dec-84e9-11e7-9892-e37b7645ad74.png)](https://chrome.google.com/webstore/detail/mini-radio/klcjochgjlcecbalpokmcldlfhngcnfh?utm_source=github)
 
-## Technical Information
+## Technical 
+
+### Development
+
+```bash
+npm install
+npm run watch
+
+# Load the extension in Chrome
+# 1. Open Chrome and navigate to chrome://extensions
+# 2. Enable Developer Mode
+# 3. Click on Load unpacked extension
+# 4. Select the dist folder
+
+# Build the extension
+npm run build
+
+# Package the extension
+npm run package
+```
 
 ### rPlayer library
 

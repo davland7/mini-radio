@@ -2,7 +2,7 @@
   <div class="navbar">
     <div class="navbar__logo">
       <img
-        :src="require('@/images/logo.png')"
+        :src="imageSrc"
         alt=""
       >
       {{ messages.name }}
@@ -39,19 +39,19 @@
       totalTabs: {
         type: Number,
         required: true
-      },
-      stationsPerTab: {
-        type: Number,
-        required: true
       }
     },
-    emits: [
-      'tab'
-    ],
-    methods: {
-      tab (index) {
-        this.$emit('tab', index)
+    computed: {
+      imageSrc () {
+        return `../images/icon48.png`
       }
+    },
+    setup(props, { emit }) {
+      const tab = (index) => {
+        emit('tab', index)
+      }
+
+      return { tab }
     }
   }
 </script>

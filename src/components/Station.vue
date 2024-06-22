@@ -12,7 +12,7 @@
       <img
         :alt="item.title"
         class="station__logo"
-        :src="require(`@/images/${item.logo}`)"
+        :src="imageSrc"
       >
       <svg
         aria-hidden="true"
@@ -42,12 +42,17 @@
         required: true
       }
     },
+    computed: {
+      imageSrc () {
+        return `../images/${this.item.logo}`
+      }
+    },
     setup(props, { emit }) {
       const play = () => {
-        emit('play', props.item);
+        emit('play', props.item)
       }
 
-      return { play };
+      return { play }
     }
   }
 </script>
