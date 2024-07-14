@@ -25,5 +25,23 @@
   },
   "list": {
     "message": "list"
+  },
+  "logoForm": {
+    "message": "Choose image"
+  },
+  "titleForm": {
+    "message": "Title"
+  },
+  "descriptionForm": {
+    "message": "Description"
+  },
+  "scrForm": {
+    "message": "Source"
+  },
+  "resetForm": {
+    "message": "Reset"
+  },
+  "saveForm": {
+    "message": "Save"
   }
 }

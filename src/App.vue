@@ -12,10 +12,17 @@
       @tab="tabs"
     />
     <station
-      v-for="(item, index) in stations"
+      v-for="(item, index) in tabStations"
       :key="index"
       :item="item"
       :messages="messages.station"
+      :lastStation="index === 0"
+      @play="play"
+    />
+    <more
+      v-if="currentTab === totalTabs - 1"
+      :messages="messages.more"
+      :moreStation="moreStation"
       @play="play"
     />
     <footer-bar
@@ -28,6 +35,7 @@
   import Player from './components/Player.vue'
   import Navbar from './components/Navbar.vue'
   import Station from './components/Station.vue'
+  import More from './components/More.vue'
   import FooterBar from './components/Footer.vue'
 
   import stations from './stations.json'
@@ -39,11 +47,13 @@
       Player,
       Navbar,
       Station,
+      More,
       FooterBar
     },
     data () {
       return {
         station: stations[0],
+        moreStation: stations[stations.length - 1],
         currentTab: 0,
         stationsPerTab: 5,
         messages: {
@@ -58,7 +68,20 @@
             list: getMessage('list')
           },
           station: {
-            play: getMessage('play')
+            play: getMessage('play'),
+          },
+          more: {
+            station: {
+              play: getMessage('play'),
+            },
+            form: {
+              logo: getMessage('logoForm'),
+              title: getMessage('titleForm'),
+              description: getMessage('descriptionForm'),
+              src: getMessage('srcForm'),
+              reset: getMessage('resetForm'),
+              save: getMessage('saveForm')
+            }
           },
           footer: {
             version: getManifest().version,
@@ -70,14 +93,15 @@
     },
     computed: {
       totalTabs() {
-        return Math.ceil(stations.length / this.stationsPerTab)
+        return Math.ceil(stations.length / this.stationsPerTab) + 1 // + 1 More
       },
-      stations() {
+      tabStations() {
         const index = this.currentTab * this.stationsPerTab
         return stations.slice(index, index + this.stationsPerTab)
       }
     },
     created () {
+      stations.length = stations.length - 1
       document.documentElement.lang = getMessage('locale')
       document.title = getMessage('name')
       getStorage('active', (err, station) => {
@@ -139,6 +163,5 @@
 
   .popup {
     width: 320px;
-    margin: 2px;
   }
 </style>

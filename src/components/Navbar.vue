@@ -18,7 +18,7 @@
         @click="tab(index)"
         @keyup.enter="tab(index)"
       >
-        <span class="navbar__list">{{ messages.list }}</span> {{ tabNumber }}
+        <span class="navbar__list">{{ messages.list }}</span> {{ tabNumber === totalTabs ? '+' : tabNumber }}
       </div>
     </div>
   </div>

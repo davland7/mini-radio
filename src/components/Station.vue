@@ -44,7 +44,7 @@
     },
     computed: {
       imageSrc () {
-        return `../images/${this.item.logo}`
+        return this.item.logo
       }
     },
     setup(props, { emit }) {
@@ -65,7 +65,7 @@
     margin: 2px;
     border: solid 1px var(--border-color);
     background-color: var(--content-color);
-    border-radius: 60px 0 0 60px;
+    border-radius: 30px 0 0 30px;
 
     &__text {
       display: flex;

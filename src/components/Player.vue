@@ -86,7 +86,7 @@
         }
       },
       imageSrc () {
-        return `../images/${this.station.logo}`
+        return this.station.logo
       }
     },
     created () {
