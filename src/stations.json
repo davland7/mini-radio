@@ -18,7 +18,7 @@
   }, {
     "title": "CHOM",
     "description": "Montreal",
-    "src": "https://24453.live.streamtheworld.com/CHOMFM_ADP/HLS/playlist.m3u8",
+    "src": "https://playerservices.streamtheworld.com/api/livestream-redirect/CHOMFM_ADP.m3u8",
     "logo": "../images/chom-fm.png"
   }, {
     "title": "CHOI 98,1 Radio X",
@@ -38,12 +38,12 @@
   }, {
     "title": "Énergie",
     "description": "Montreal",
-    "src": "https://26423.live.streamtheworld.com/CKMFFM_ADP/HLS/playlist.m3u8",
+    "src": "https://playerservices.streamtheworld.com/api/livestream-redirect/CKMFFM_ADP.m3u8",
     "logo": "../images/ckmf-fm.png"
   }, {
     "title": "107,3 Rouge FM",
     "description": "Montréal",
-    "src": "https://26313.live.streamtheworld.com/CITEFM_ADP/HLS/playlist.m3u8",
+    "src": "https://playerservices.streamtheworld.com/api/livestream-redirect/CITEFM_ADP.m3u8",
     "logo": "../images/cite-fm.png"
   }, {
     "title": "Rythme FM",
@@ -73,7 +73,7 @@
   }, {
     "title": "QUB Radio",
     "description": "Montréal",
-    "src": "https://19293.live.streamtheworld.com/QUB_RADIOAAC.aac",
+    "src": "https://playerservices.streamtheworld.com/api/livestream-redirect/QUB_RADIO_SC",
     "logo": "../images/qub-web.png"
   }, {
     "title": "Hit Country",

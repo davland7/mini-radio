@@ -100,6 +100,7 @@
       margin: 0 2px;
       width: 30px;
       height: 30px;
+      line-height: 30px;
       font-size: 18px;
       color: var(--light-color);
       border: solid 1px var(--border-color);

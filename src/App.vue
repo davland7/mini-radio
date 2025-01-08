@@ -75,12 +75,12 @@
               play: getMessage('play'),
             },
             form: {
-              logo: getMessage('logoForm'),
-              title: getMessage('titleForm'),
-              description: getMessage('descriptionForm'),
-              src: getMessage('srcForm'),
-              reset: getMessage('resetForm'),
-              save: getMessage('saveForm')
+              logo: getMessage('logo_form'),
+              title: getMessage('title_form'),
+              description: getMessage('description_form'),
+              src: getMessage('src_form'),
+              reset: getMessage('reset_form'),
+              save: getMessage('save_form')
             }
           },
           footer: {

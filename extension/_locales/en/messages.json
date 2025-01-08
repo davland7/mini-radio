@@ -26,22 +26,22 @@
   "list": {
     "message": "list"
   },
-  "logoForm": {
+  "logo_form": {
     "message": "Choose image"
   },
-  "titleForm": {
+  "title_form": {
     "message": "Title"
   },
-  "descriptionForm": {
+  "description_form": {
     "message": "Description"
   },
-  "scrForm": {
+  "src_form": {
     "message": "Source"
   },
-  "resetForm": {
+  "reset_form": {
     "message": "Reset"
   },
-  "saveForm": {
+  "save_form": {
     "message": "Save"
   }
 }
