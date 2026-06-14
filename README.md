@@ -1,3 +1,13 @@
+![Archived](https://img.shields.io/badge/status-archived-red?style=for-the-badge)
+
+> ## ⚠️ Archived Project Notice
+>
+> This repository contains the source code of **Mini Radio v2**, an older open‑source version.  
+> It is **not** the version currently available on the Chrome Web Store.
+>
+> 👉 The latest version (v3) is a complete rewrite and is available here:  
+> https://chromewebstore.google.com/detail/mini-radio/klcjochgjlcecbalpokmcldlfhngcnfh
+
 # Mini Radio
 
 ![Radio Mini](https://user-images.githubusercontent.com/187134/29489199-4d6242fc-84e9-11e7-8de2-9fd656a541da.gif)
@@ -37,7 +47,7 @@ npm run build
 ```
 
 #### Package the extension
-  
+
 ```bash
 npm run package
 ```
